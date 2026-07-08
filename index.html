@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emerging Tech Risk — Patrick J. Kelly</title>
+<meta name="description" content="Open dashboards and briefings on frontier AI and post-quantum risk — built in the open from public information by Patrick J. Kelly.">
+<link rel="canonical" href="https://emergingtechrisk.com/">
+<meta property="og:title" content="Emerging Tech Risk — Patrick J. Kelly">
+<meta property="og:description" content="Thinking clearly and openly about emerging tech risk. Open dashboards and briefings on frontier AI and the post-quantum transition.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://emergingtechrisk.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%23F7F6F1'/%3E%3Crect%20x='8'%20y='8'%20width='16'%20height='16'%20fill='%230C2340'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:#F7F6F1;color:#0C2340;font-family:'Public Sans',sans-serif}
+  a{color:#0C2340}
+  a:hover{opacity:.85}
+
+  .wrap{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,48px);padding-right:clamp(20px,5vw,48px)}
+  .mono{font-family:'IBM Plex Mono',monospace}
+  .serif{font-family:'Source Serif 4',serif}
+
+  /* ===== Nav ===== */
+  .nav-band{border-bottom:1px solid rgba(12,35,64,.25)}
+  .nav{display:flex;flex-wrap:wrap;row-gap:12px;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#0C2340}
+  .brand-mark{width:10px;height:10px;background:#0C2340}
+  .brand-name{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;font-weight:500}
+  .nav-links{display:flex;flex-wrap:wrap;gap:16px 32px;font-size:13px;font-weight:500}
+  .nav-links a{text-decoration:none;color:rgba(12,35,64,.85)}
+  .nav-domain{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55)}
+
+  /* ===== Hero ===== */
+  .hero{display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,64px);padding-top:clamp(48px,8vw,84px);padding-bottom:clamp(48px,7vw,76px);align-items:flex-start}
+  .hero-copy{flex:999 1 440px;min-width:0;display:flex;flex-direction:column;gap:26px}
+  .kicker{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:oklch(0.52 0.09 250)}
+  .hero h1{margin:0;font-family:'Source Serif 4',serif;font-size:clamp(36px,5vw,60px);line-height:1.08;font-weight:500;letter-spacing:-.01em;text-wrap:pretty}
+  .hero-sub{margin:0;font-size:18px;line-height:1.65;color:rgba(12,35,64,.78);max-width:580px;text-wrap:pretty}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:16px 18px;align-items:center;margin-top:6px}
+  .btn{display:inline-block;background:#0C2340;color:#F7F6F1;font-size:14px;font-weight:600;padding:13px 24px;text-decoration:none}
+  .link-underline{font-size:14px;font-weight:500;color:#0C2340;text-decoration:underline;text-underline-offset:4px}
+
+  /* Current focus panel */
+  .focus{flex:1 1 300px;max-width:420px;border:1px solid rgba(12,35,64,.25);background:#FDFCF9;scroll-margin-top:24px}
+  .focus-hd{padding:16px 20px;border-bottom:1px solid rgba(12,35,64,.15);font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(12,35,64,.6)}
+  .focus-item{padding:20px;display:flex;flex-direction:column;gap:6px}
+  .focus-item + .focus-item{border-top:1px solid rgba(12,35,64,.12)}
+  .focus-row{display:flex;justify-content:space-between;align-items:baseline}
+  .focus-name{display:flex;align-items:center;gap:9px}
+  .focus-name svg{flex:none}
+  .focus-title{font-family:'Source Serif 4',serif;font-size:20px;font-weight:600}
+  .focus-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55)}
+  .focus-item p{margin:0;font-size:13.5px;line-height:1.55;color:rgba(12,35,64,.7)}
+
+  /* ===== Work band ===== */
+  .work-band{border-top:1px solid rgba(12,35,64,.25);border-bottom:1px solid rgba(12,35,64,.25);scroll-margin-top:24px}
+  .work-band-inner{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:baseline;padding-top:22px;padding-bottom:22px}
+  .band-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;font-weight:500}
+  .band-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55)}
+
+  /* ===== Featured project ===== */
+  .featured-band{border-bottom:1px solid rgba(12,35,64,.12)}
+  .featured{display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);padding-top:clamp(32px,5vw,52px);padding-bottom:clamp(32px,5vw,52px);align-items:center}
+  .featured-copy{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:16px}
+  .tag-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .tag-row svg{flex:none}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;padding:4px 9px;border:1px solid rgba(12,35,64,.35);color:rgba(12,35,64,.75)}
+  .tag-live{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;padding:4px 9px;background:oklch(0.52 0.09 250);color:#F7F6F1}
+  .featured-title{font-family:'Source Serif 4',serif;font-size:clamp(28px,3.5vw,36px);font-weight:600;line-height:1.15}
+  .featured-copy p{margin:0;font-size:15.5px;line-height:1.65;color:rgba(12,35,64,.75);text-wrap:pretty}
+  .featured-link{font-size:14px;font-weight:600;color:#0C2340;text-decoration:underline;text-underline-offset:4px}
+  .featured-shot{flex:1 1 320px;min-width:min(100%,300px);align-self:center;aspect-ratio:1018/533;height:auto;border:1px solid rgba(12,35,64,.25);position:relative;overflow:hidden;background:#FDFCF9}
+  .featured-shot img{position:absolute;max-width:none;width:100%;height:180.131%;left:50%;top:89.897%;transform:translate(-50%,-50%)}
+
+  /* ===== Project grid ===== */
+  .grid-band{border-bottom:1px solid rgba(12,35,64,.25)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1px;background:rgba(12,35,64,.18);border-left:1px solid rgba(12,35,64,.18);border-right:1px solid rgba(12,35,64,.18)}
+  .card{text-decoration:none;color:#0C2340;background:#F7F6F1;padding:clamp(24px,5vw,36px) clamp(20px,4vw,44px);display:flex;flex-direction:column;gap:12px}
+  .card:hover{background:#FDFCF9;opacity:1}
+  .card-top{display:flex;justify-content:space-between;align-items:center}
+  .card-cat{display:flex;align-items:center;gap:8px}
+  .card-cat svg{flex:none}
+  .card-cat-label{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:rgba(12,35,64,.6)}
+  .card-nums{display:flex;gap:12px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px}
+  .card-live{color:oklch(0.52 0.09 250)}
+  .card-proto{color:rgba(12,35,64,.5)}
+  .card-no{color:rgba(12,35,64,.45)}
+  .card-title{font-family:'Source Serif 4',serif;font-size:25px;font-weight:600;line-height:1.2}
+  .card p{margin:0;font-size:14.5px;line-height:1.6;color:rgba(12,35,64,.72);text-wrap:pretty}
+  .card-cta{font-size:13.5px;font-weight:600;text-decoration:underline;text-underline-offset:4px;margin-top:auto}
+
+  /* ===== Note ===== */
+  .note-band{background:#FDFCF9;border-bottom:1px solid rgba(12,35,64,.12)}
+  .note{display:flex;flex-wrap:wrap;gap:12px clamp(24px,4vw,48px);padding-top:26px;padding-bottom:26px;align-items:baseline}
+  .note-label{flex:0 0 172px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(12,35,64,.55)}
+  .note p{flex:1 1 400px;min-width:0;margin:0;max-width:660px;font-size:13.5px;line-height:1.65;color:rgba(12,35,64,.68);text-wrap:pretty}
+
+  /* ===== About ===== */
+  #about{scroll-margin-top:24px}
+  .about{display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);padding-top:clamp(44px,7vw,72px);padding-bottom:clamp(44px,7vw,72px)}
+  .about-label{flex:0 0 172px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;font-weight:500;color:rgba(12,35,64,.6)}
+  .portrait{flex:0 0 auto;width:148px;height:148px;border-radius:50%;position:relative;overflow:hidden}
+  .portrait img{position:absolute;max-width:none;width:130.266%;height:130.266%;left:47.295%;top:59.998%;transform:translate(-50%,-50%)}
+  .about-copy{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:18px;max-width:660px}
+  .about-lede{margin:0;font-family:'Source Serif 4',serif;font-size:26px;line-height:1.5;text-wrap:pretty}
+  .about-copy .body{margin:0;font-size:15.5px;line-height:1.7;color:rgba(12,35,64,.75)}
+  .about-links{display:flex;gap:24px;margin-top:4px}
+  .about-links a{font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+
+  /* ===== Footer ===== */
+  #contact{background:#0C2340;color:rgba(247,246,241,.88);scroll-margin-top:24px}
+  .footer{display:flex;flex-direction:column;gap:36px;padding-top:clamp(36px,6vw,56px);padding-bottom:32px}
+  .footer-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:clamp(24px,4vw,48px)}
+  .footer-pitch{display:flex;flex-direction:column;gap:12px;max-width:560px}
+  .footer-headline{font-family:'Source Serif 4',serif;font-size:28px;font-weight:500;color:#F7F6F1;text-wrap:pretty}
+  .footer-pitch p{margin:0;font-size:14.5px;line-height:1.65;color:rgba(247,246,241,.7)}
+  .footer-links{display:flex;gap:28px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em}
+  .footer-links a{color:#F7F6F1;text-decoration:none;border-bottom:1px solid rgba(247,246,241,.5);padding-bottom:3px}
+  .footer-bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center;border-top:1px solid rgba(247,246,241,.2);padding-top:20px}
+  .footer-domain{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(247,246,241,.6)}
+  .footer-copy{font-size:13px;color:rgba(247,246,241,.6)}
+
+  /* ===== Mobile refinements ===== */
+  @media (pointer:coarse){
+    /* Enlarge tap areas without shifting the layout */
+    .nav-links a,.about-links a,.footer-links a{padding:12px 8px;margin:-12px -8px}
+  }
+  @media (max-width:560px){
+    .nav-domain{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav-band">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-name">EMERGING TECH RISK</div>
+    </a>
+    <nav class="nav-links">
+      <a href="#work">Projects</a>
+      <a href="#focus">Focus areas</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-domain">emergingtechrisk.com</div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section id="top" class="wrap hero">
+  <div class="hero-copy">
+    <div class="kicker">A WORKING COLLECTION</div>
+    <h1>Thinking clearly about emerging tech risk.</h1>
+    <p class="hero-sub">Frontier AI and quantum computing are rewriting the risk landscape faster than our playbooks can keep up. This is a collection of open dashboards and briefings for making sense of it — built to be shared, challenged, and improved.</p>
+    <div class="hero-ctas">
+      <a href="#work" class="btn">Explore the work</a>
+      <a href="#about" class="link-underline">About Patrick →</a>
+    </div>
+  </div>
+  <div id="focus" class="focus">
+    <div class="focus-hd">CURRENT FOCUS</div>
+    <div class="focus-item">
+      <div class="focus-row">
+        <div class="focus-name">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
+          <div class="focus-title">Frontier AI</div>
+        </div>
+        <div class="focus-count">2 projects</div>
+      </div>
+      <p>What AI-accelerated threats mean for controls, remediation, and executive oversight.</p>
+    </div>
+    <div class="focus-item">
+      <div class="focus-row">
+        <div class="focus-name">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.8)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
+          <div class="focus-title">Quantum / PQC</div>
+        </div>
+        <div class="focus-count">3 projects</div>
+      </div>
+      <p>Getting institutions ready for the post-quantum transition before Q-Day arrives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORK BAND ===== -->
+<div id="work" class="work-band">
+  <div class="wrap work-band-inner">
+    <div class="band-label">SELECTED WORK</div>
+    <div class="band-meta">05 PROJECTS · ALL OPEN SOURCE</div>
+  </div>
+</div>
+
+<!-- ===== FEATURED PROJECT ===== -->
+<section class="featured-band">
+  <div class="wrap featured">
+    <div class="featured-copy">
+      <div class="tag-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.75)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
+        <div class="tag">QUANTUM · PQC</div>
+        <div class="tag">PROTOTYPE</div>
+        <div class="tag-live">LIVE</div>
+      </div>
+      <h2 class="featured-title" style="margin:0">Financial Sector PQC Readiness Monitor</h2>
+      <p>Post-quantum readiness tracked across the top 100 U.S. financial institutions and the 100 largest third-party providers to the sector — with a live intelligence feed of standards, policy, and sector news.</p>
+      <a href="/PQC-Readiness-Monitor/" class="featured-link">Open the live dashboard →</a>
+    </div>
+    <a href="/PQC-Readiness-Monitor/" class="featured-shot" aria-label="Open the PQC Readiness Monitor">
+      <img src="assets/pqc-monitor.png" alt="Screenshot of the Financial Sector PQC Readiness Monitor dashboard">
+    </a>
+  </div>
+</section>
+
+<!-- ===== PROJECT GRID ===== -->
+<section class="grid-band">
+  <div class="wrap">
+    <div class="grid">
+
+      <a href="/Evaluating-Frontier-AI-Risk/" class="card">
+        <div class="card-top">
+          <div class="card-cat">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
+            <div class="card-cat-label">FRONTIER AI · EXECUTIVE BRIEFING</div>
+          </div>
+          <div class="card-nums"><div class="card-proto">PROTOTYPE</div><div class="card-live">LIVE</div><div class="card-no">02</div></div>
+        </div>
+        <div class="card-title">Evaluating Frontier AI Risk</div>
+        <p>As attacks accelerate, does patching faster still reduce risk? A five-part interactive briefing on AI-accelerated cyber threats and executive oversight.</p>
+        <div class="card-cta">View live →</div>
+      </a>
+
+      <a href="/Frontier-AI-Controls/" class="card">
+        <div class="card-top">
+          <div class="card-cat">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
+            <div class="card-cat-label">FRONTIER AI · CONTROLS</div>
+          </div>
+          <div class="card-nums"><div class="card-proto">PROTOTYPE</div><div class="card-live">LIVE</div><div class="card-no">03</div></div>
+        </div>
+        <div class="card-title">Frontier AI Controls</div>
+        <p>The ten security controls that most reduce frontier-AI risk for a regulated bank — ranked by risk-reduction value and mapped to the vendor landscape.</p>
+        <div class="card-cta">View live →</div>
+      </a>
+
+      <a href="/Caterpillar-PQC-Demo/" class="card">
+        <div class="card-top">
+          <div class="card-cat">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.75)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
+            <div class="card-cat-label">QUANTUM · CASE STUDY</div>
+          </div>
+          <div class="card-nums"><div class="card-proto">PROTOTYPE</div><div class="card-live">LIVE</div><div class="card-no">04</div></div>
+        </div>
+        <div class="card-title">Company PQC Readiness — a worked example</div>
+        <p>A single-company assessment built entirely from public signals: readiness profile, peer benchmark, supply-chain exposure, and the regulatory timeline.</p>
+        <div class="card-cta">View live →</div>
+      </a>
+
+      <a href="/Preparing-for-Q-Day/" class="card">
+        <div class="card-top">
+          <div class="card-cat">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.75)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
+            <div class="card-cat-label">QUANTUM · STRATEGY BRIEFING</div>
+          </div>
+          <div class="card-nums"><div class="card-proto">PROTOTYPE</div><div class="card-live">LIVE</div><div class="card-no">05</div></div>
+        </div>
+        <div class="card-title">Preparing for Q-Day</div>
+        <p>Quantum computing will eventually break the encryption the financial system runs on. A strategic framework for the transition: internal migration, sector coordination, and collective vendor leverage.</p>
+        <div class="card-cta">View live →</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTE ON THESE PROJECTS ===== -->
+<div class="note-band">
+  <div class="wrap note">
+    <div class="note-label">A NOTE ON THESE PROJECTS</div>
+    <p>These projects are often more visually polished than some of the underlying content. They should be viewed as prototypes — point-in-time assessments in rapidly changing areas of risk — and may not be relevant to your unique organizational needs.</p>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-label">ABOUT</div>
+    <div class="portrait">
+      <img src="assets/portrait.webp" alt="Portrait of Patrick J. Kelly">
+    </div>
+    <div class="about-copy">
+      <p class="about-lede">I'm Patrick Kelly. I work on technology risk — lately, what frontier AI and the post-quantum transition mean for the institutions we all depend on.</p>
+      <p class="body">Everything here is built in the open from public information: use it, question it, improve it. If you're thinking about the same problems, I'd like to compare notes.</p>
+      <div class="about-links">
+        <a href="https://github.com/WowItWorked">GitHub</a>
+        <a href="https://www.linkedin.com/in/patrickjameskelly/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER / CONTACT ===== -->
+<footer id="contact">
+  <div class="wrap footer">
+    <div class="footer-top">
+      <div class="footer-pitch">
+        <div class="footer-headline">Thinking out loud about emerging and systemic risk.</div>
+        <p>Questions, corrections, and collaborations are all welcome.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/WowItWorked">GITHUB ↗</a>
+        <a href="https://www.linkedin.com/in/patrickjameskelly/">LINKEDIN ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-domain">EMERGINGTECHRISK.COM</div>
+      <div class="footer-copy">Built in the open · © 2026 Patrick J. Kelly</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
