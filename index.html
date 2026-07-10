@@ -80,6 +80,8 @@
   .featured-shot img{position:absolute;max-width:none;width:100%;height:184.615%;left:50%;top:92.115%;transform:translate(-50%,-50%)}
   .featured-shot.crq{aspect-ratio:1018/478}
   .featured-shot.crq img{height:100%;top:50%}
+  .featured-shot::after{content:"";position:absolute;inset:0;background:oklch(0.52 0.09 250);opacity:0;transition:opacity .15s;pointer-events:none}
+  .featured-shot:hover::after{opacity:.12}
 
   /* ===== Project grid ===== */
   .grid-band{border-bottom:1px solid rgba(12,35,64,.25);padding-bottom:clamp(32px,5vw,48px)}
