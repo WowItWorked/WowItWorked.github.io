@@ -78,6 +78,8 @@
   .featured-link{font-size:14px;font-weight:600;color:#0C2340;text-decoration:underline;text-underline-offset:4px}
   .featured-shot{flex:1 1 320px;min-width:min(100%,300px);align-self:center;aspect-ratio:1018/520;height:auto;border:1px solid rgba(12,35,64,.25);position:relative;overflow:hidden;background:#FDFCF9}
   .featured-shot img{position:absolute;max-width:none;width:100%;height:184.615%;left:50%;top:92.115%;transform:translate(-50%,-50%)}
+  .featured-shot.crq{aspect-ratio:1018/478}
+  .featured-shot.crq img{height:100%;top:50%}
 
   /* ===== Project grid ===== */
   .grid-band{border-bottom:1px solid rgba(12,35,64,.25);padding-bottom:clamp(32px,5vw,48px)}
@@ -237,6 +239,26 @@
     </div>
     <a href="/Tech-Risk-Tracker/" class="featured-shot" aria-label="Open the Tech Risk Tracker">
       <img src="assets/tech-risk-tracker.png?v=20260710" alt="Screenshot of the Tech Risk Tracker daily edition front page">
+    </a>
+  </div>
+</section>
+
+<!-- ===== FEATURED PROJECT: CRQ PLATFORM ===== -->
+<section class="featured-band">
+  <div class="wrap featured">
+    <div class="featured-copy">
+      <div class="tag-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 4v16h16"></path><path d="M5 7c1.5 6.5 7 9.5 14 10"></path></svg>
+        <div class="tag">CYBER &amp; TECH RISK · CRQ</div>
+        <div class="tag">DESIGN PROTOTYPE</div>
+        <div class="tag-live">LIVE</div>
+      </div>
+      <h2 class="featured-title" style="margin:0">Cyber &amp; Tech Risk Quantification Platform</h2>
+      <p>An interactive prototype of a cyber &amp; technology risk quantification platform: FAIR-based Monte Carlo simulation with a real in-browser engine, decision-first governance, and regulator-grade defensibility — reproducible seeded runs, provenance-tiered inputs, and an append-only challenge ledger. A role switcher shows the platform as the first line, second line, model risk, and executives would each see it. All data is simulated.</p>
+      <a href="/Cyber-Tech-Risk-Quantification/" class="featured-link">Open the prototype →</a>
+    </div>
+    <a href="/Cyber-Tech-Risk-Quantification/" class="featured-shot crq" aria-label="Open the Cyber &amp; Tech Risk Quantification Platform prototype">
+      <img src="assets/crq-platform.png?v=20260710" alt="Screenshot of the CRQ platform portfolio dashboard">
     </a>
   </div>
 </section>
