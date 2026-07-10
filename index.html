@@ -90,11 +90,13 @@
   .featured-shot img{position:absolute;max-width:none;width:100%;height:180.131%;left:50%;top:89.897%;transform:translate(-50%,-50%)}
 
   /* ===== Project grid ===== */
-  .grid-band{border-bottom:1px solid rgba(12,35,64,.25)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1px;background:rgba(12,35,64,.18);border-left:1px solid rgba(12,35,64,.18);border-right:1px solid rgba(12,35,64,.18)}
+  .grid-band{border-bottom:1px solid rgba(12,35,64,.25);padding-bottom:clamp(32px,5vw,48px)}
+  .grid-hd{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:baseline;padding:clamp(24px,4vw,36px) 0 14px;scroll-margin-top:12px}
+  .grid-hd-name{display:flex;align-items:center;gap:9px}
+  .grid-hd-name svg{flex:none;align-self:center}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1px;background:rgba(12,35,64,.18);border:1px solid rgba(12,35,64,.18)}
   .card{text-decoration:none;color:#0C2340;background:#F7F6F1;padding:clamp(24px,5vw,36px) clamp(20px,4vw,44px);display:flex;flex-direction:column;gap:12px}
   .card:hover{background:#FDFCF9;opacity:1}
-  #frontier-ai,#quantum-pqc{scroll-margin-top:24px}
   .card-top{display:flex;justify-content:space-between;align-items:center}
   .card-cat{display:flex;align-items:center;gap:8px}
   .card-cat svg{flex:none}
@@ -253,9 +255,17 @@
 <!-- ===== PROJECT GRID ===== -->
 <section class="grid-band">
   <div class="wrap">
+
+    <div id="frontier-ai" class="grid-hd">
+      <div class="grid-hd-name">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
+        <div class="band-label">FRONTIER AI</div>
+      </div>
+      <div class="band-meta">2 PROJECTS</div>
+    </div>
     <div class="grid">
 
-      <a id="frontier-ai" href="/Evaluating-Frontier-AI-Risk/" class="card">
+      <a href="/Evaluating-Frontier-AI-Risk/" class="card">
         <div class="card-top">
           <div class="card-cat">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
@@ -281,7 +291,18 @@
         <div class="card-cta">View live →</div>
       </a>
 
-      <a id="quantum-pqc" href="/PQC-Readiness-Monitor/" class="card">
+    </div>
+
+    <div id="quantum-pqc" class="grid-hd">
+      <div class="grid-hd-name">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.8)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
+        <div class="band-label">QUANTUM / PQC</div>
+      </div>
+      <div class="band-meta">2 PROJECTS</div>
+    </div>
+    <div class="grid">
+
+      <a href="/PQC-Readiness-Monitor/" class="card">
         <div class="card-top">
           <div class="card-cat">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.75)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
