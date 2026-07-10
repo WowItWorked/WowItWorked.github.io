@@ -378,6 +378,7 @@
       <div class="footer-copy">Built in the open · © 2026 Patrick J. Kelly</div>
     </div>
   </div>
+  <div id="scroll-spacer" aria-hidden="true"></div>
 </footer>
 
 <script>
@@ -390,6 +391,32 @@
     dd.querySelectorAll('a').forEach(function(a){
       a.addEventListener('click', function(){ dd.open = false; });
     });
+  })();
+
+  /* Anchor targets near the bottom of the page can't reach the top of the
+     viewport on tall screens. Extend the footer by the missing amount so
+     in-page navigation always lands the section flush with the top. */
+  (function(){
+    var spacer = document.getElementById('scroll-spacer');
+    if (!spacer) return;
+    function ensureReach(id){
+      var target = id && document.getElementById(id);
+      var current = parseFloat(spacer.style.height) || 0;
+      var base = document.documentElement.scrollHeight - current;
+      var extra = 0;
+      if (target && (id === 'frontier-ai' || id === 'quantum-pqc')) {
+        var targetY = target.getBoundingClientRect().top + window.scrollY - 12;
+        extra = Math.max(0, Math.ceil(targetY - (base - window.innerHeight)));
+      }
+      var px = extra + 'px';
+      // never collapse-and-regrow: a momentary shrink clamps the scroll position
+      if (spacer.style.height !== px) spacer.style.height = px;
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(){ ensureReach(this.getAttribute('href').slice(1)); });
+    });
+    window.addEventListener('hashchange', function(){ ensureReach(location.hash.slice(1)); });
+    if (location.hash) ensureReach(location.hash.slice(1));
   })();
 </script>
 
