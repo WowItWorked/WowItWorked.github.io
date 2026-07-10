@@ -34,16 +34,6 @@
   .nav-links a{text-decoration:none;color:rgba(12,35,64,.85)}
   .nav-domain{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55)}
 
-  /* Focus areas dropdown */
-  .nav-dd{position:relative}
-  .nav-dd summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:rgba(12,35,64,.85)}
-  .nav-dd summary::-webkit-details-marker{display:none}
-  .nav-dd summary::after{content:"";width:6px;height:6px;border-right:1.5px solid rgba(12,35,64,.6);border-bottom:1.5px solid rgba(12,35,64,.6);transform:rotate(45deg);margin-top:-3px;transition:transform .15s}
-  .nav-dd[open] summary::after{transform:rotate(-135deg);margin-top:3px}
-  .nav-dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);min-width:220px;background:#FDFCF9;border:1px solid rgba(12,35,64,.25);box-shadow:0 10px 28px rgba(12,35,64,.14);z-index:30;display:flex;flex-direction:column}
-  .nav-dd-menu a{display:block;padding:13px 18px;text-decoration:none;font-size:13px;font-weight:500;color:rgba(12,35,64,.85)}
-  .nav-dd-menu a + a{border-top:1px solid rgba(12,35,64,.12)}
-  .nav-dd-menu a:hover{background:#F7F6F1;opacity:1}
 
   /* ===== Hero ===== */
   .hero{display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,64px);padding-top:clamp(48px,8vw,84px);padding-bottom:clamp(48px,7vw,76px);align-items:flex-start}
@@ -167,14 +157,7 @@
     </a>
     <nav class="nav-links">
       <a href="#work">Projects</a>
-      <details class="nav-dd">
-        <summary>Focus Areas</summary>
-        <div class="nav-dd-menu">
-          <a href="#frontier-ai">Frontier AI</a>
-          <a href="#quantum-pqc">Quantum / PQC</a>
-          <a href="/Tech-Risk-Tracker/">Tech Risk Radar</a>
-        </div>
-      </details>
+      <a href="#focus">Focus Areas</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -388,17 +371,6 @@
 </footer>
 
 <script>
-  (function(){
-    var dd = document.querySelector('.nav-dd');
-    if (!dd) return;
-    document.addEventListener('click', function(e){
-      if (dd.open && !dd.contains(e.target)) dd.open = false;
-    });
-    dd.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ dd.open = false; });
-    });
-  })();
-
   /* Anchor targets near the bottom of the page can't reach the top of the
      viewport on tall screens. Extend the footer by the missing amount so
      in-page navigation always lands the section flush with the top. */
