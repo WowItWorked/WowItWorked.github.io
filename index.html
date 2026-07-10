@@ -140,6 +140,12 @@
   .footer-domain{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(247,246,241,.6)}
   .footer-copy{font-size:13px;color:rgba(247,246,241,.6)}
 
+  /* ===== Scroll reveal ===== */
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+    .reveal.in{opacity:1;transform:none}
+  }
+
   /* ===== Mobile refinements ===== */
   @media (pointer:coarse){
     /* Enlarge tap areas without shifting the layout */
@@ -417,6 +423,26 @@
     });
     window.addEventListener('hashchange', function(){ ensureReach(location.hash.slice(1)); });
     if (location.hash) ensureReach(location.hash.slice(1));
+  })();
+
+  /* Reveal sections as they enter the viewport (once, staggered) */
+  (function(){
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var io = new IntersectionObserver(function(entries){
+      var delay = 0;
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.style.transitionDelay = delay + 'ms';
+        delay += 80;
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      });
+    }, {rootMargin: '0px 0px -8% 0px', threshold: 0.05});
+    document.querySelectorAll('.featured, .grid-hd, .card, .note, .about').forEach(function(el){
+      el.classList.add('reveal');
+      io.observe(el);
+    });
   })();
 </script>
 
