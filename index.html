@@ -30,9 +30,20 @@
   .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#0C2340}
   .brand-mark{width:10px;height:10px;background:#0C2340}
   .brand-name{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;font-weight:500}
-  .nav-links{display:flex;flex-wrap:wrap;gap:16px 32px;font-size:13px;font-weight:500}
+  .nav-links{display:flex;flex-wrap:wrap;gap:16px 32px;font-size:13px;font-weight:500;align-items:center}
   .nav-links a{text-decoration:none;color:rgba(12,35,64,.85)}
   .nav-domain{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55)}
+
+  /* Focus areas dropdown */
+  .nav-dd{position:relative}
+  .nav-dd summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:rgba(12,35,64,.85)}
+  .nav-dd summary::-webkit-details-marker{display:none}
+  .nav-dd summary::after{content:"";width:6px;height:6px;border-right:1.5px solid rgba(12,35,64,.6);border-bottom:1.5px solid rgba(12,35,64,.6);transform:rotate(45deg);margin-top:-3px;transition:transform .15s}
+  .nav-dd[open] summary::after{transform:rotate(-135deg);margin-top:3px}
+  .nav-dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);min-width:220px;background:#FDFCF9;border:1px solid rgba(12,35,64,.25);box-shadow:0 10px 28px rgba(12,35,64,.14);z-index:30;display:flex;flex-direction:column}
+  .nav-dd-menu a{display:block;padding:13px 18px;text-decoration:none;font-size:13px;font-weight:500;color:rgba(12,35,64,.85)}
+  .nav-dd-menu a + a{border-top:1px solid rgba(12,35,64,.12)}
+  .nav-dd-menu a:hover{background:#F7F6F1;opacity:1}
 
   /* ===== Hero ===== */
   .hero{display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,64px);padding-top:clamp(48px,8vw,84px);padding-bottom:clamp(48px,7vw,76px);align-items:flex-start}
@@ -49,6 +60,8 @@
   .focus-hd{padding:16px 20px;border-bottom:1px solid rgba(12,35,64,.15);font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(12,35,64,.6)}
   .focus-item{padding:20px;display:flex;flex-direction:column;gap:6px}
   .focus-item + .focus-item{border-top:1px solid rgba(12,35,64,.12)}
+  a.focus-item{text-decoration:none;color:inherit}
+  a.focus-item:hover{background:#F7F6F1;opacity:1}
   .focus-row{display:flex;justify-content:space-between;align-items:baseline}
   .focus-name{display:flex;align-items:center;gap:9px}
   .focus-name svg{flex:none}
@@ -81,6 +94,7 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1px;background:rgba(12,35,64,.18);border-left:1px solid rgba(12,35,64,.18);border-right:1px solid rgba(12,35,64,.18)}
   .card{text-decoration:none;color:#0C2340;background:#F7F6F1;padding:clamp(24px,5vw,36px) clamp(20px,4vw,44px);display:flex;flex-direction:column;gap:12px}
   .card:hover{background:#FDFCF9;opacity:1}
+  #frontier-ai,#quantum-pqc{scroll-margin-top:24px}
   .card-top{display:flex;justify-content:space-between;align-items:center}
   .card-cat{display:flex;align-items:center;gap:8px}
   .card-cat svg{flex:none}
@@ -145,7 +159,14 @@
     </a>
     <nav class="nav-links">
       <a href="#work">Projects</a>
-      <a href="#focus">Focus Areas</a>
+      <details class="nav-dd">
+        <summary>Focus Areas</summary>
+        <div class="nav-dd-menu">
+          <a href="#frontier-ai">Frontier AI</a>
+          <a href="#quantum-pqc">Quantum / PQC</a>
+          <a href="/Tech-Risk-Tracker/">Tech Risk Radar</a>
+        </div>
+      </details>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -168,7 +189,7 @@
   </div>
   <div id="focus" class="focus">
     <div class="focus-hd">CURRENT FOCUS</div>
-    <div class="focus-item">
+    <a class="focus-item" href="#frontier-ai">
       <div class="focus-row">
         <div class="focus-name">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
@@ -177,8 +198,8 @@
         <div class="focus-count">2 projects</div>
       </div>
       <p>What AI-accelerated threats mean for controls, remediation, and executive oversight.</p>
-    </div>
-    <div class="focus-item">
+    </a>
+    <a class="focus-item" href="#quantum-pqc">
       <div class="focus-row">
         <div class="focus-name">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.8)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
@@ -187,8 +208,8 @@
         <div class="focus-count">2 projects</div>
       </div>
       <p>Getting institutions ready for the post-quantum transition before Q-Day arrives.</p>
-    </div>
-    <div class="focus-item">
+    </a>
+    <a class="focus-item" href="/Tech-Risk-Tracker/">
       <div class="focus-row">
         <div class="focus-name">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.8)" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="4.5"></circle><circle cx="12" cy="12" r="1.4" fill="rgba(12,35,64,.8)" stroke="none"></circle><line x1="12" y1="12" x2="18.5" y2="6.5"></line></svg>
@@ -197,7 +218,7 @@
         <div class="focus-count">1 project</div>
       </div>
       <p>A daily record of technology risk to the financial sector, collected from trusted sources.</p>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -234,7 +255,7 @@
   <div class="wrap">
     <div class="grid">
 
-      <a href="/Evaluating-Frontier-AI-Risk/" class="card">
+      <a id="frontier-ai" href="/Evaluating-Frontier-AI-Risk/" class="card">
         <div class="card-top">
           <div class="card-cat">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 Q13.2 10.8 20 12 Q13.2 13.2 12 20 Q10.8 13.2 4 12 Q10.8 10.8 12 4 Z"></path></svg>
@@ -260,7 +281,7 @@
         <div class="card-cta">View live →</div>
       </a>
 
-      <a href="/PQC-Readiness-Monitor/" class="card">
+      <a id="quantum-pqc" href="/PQC-Readiness-Monitor/" class="card">
         <div class="card-top">
           <div class="card-cat">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(12,35,64,.75)" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="1.6" fill="rgba(12,35,64,.75)" stroke="none"></circle><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(66 12 12)"></ellipse></svg>
@@ -337,6 +358,19 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function(){
+    var dd = document.querySelector('.nav-dd');
+    if (!dd) return;
+    document.addEventListener('click', function(e){
+      if (dd.open && !dd.contains(e.target)) dd.open = false;
+    });
+    dd.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ dd.open = false; });
+    });
+  })();
+</script>
 
 </body>
 </html>
