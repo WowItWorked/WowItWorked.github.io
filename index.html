@@ -83,6 +83,8 @@
   .featured-shot.crq img{height:100%;top:50%}
   .featured-shot::after{content:"";position:absolute;inset:0;background:oklch(0.52 0.09 250);opacity:0;transition:opacity .15s;pointer-events:none}
   .featured-shot:hover::after{opacity:.12}
+  /* Live embed: the real tracker front page, scaled to the card and made inert. The PNG beneath stays as a fallback while the frame loads. */
+  .featured-shot iframe{position:absolute;top:0;left:0;width:1280px;height:calc(1280px*520/1018);border:0;transform-origin:0 0;pointer-events:none;background:#FDFCF9}
 
   /* ===== Project grid ===== */
   .grid-band{border-bottom:1px solid rgba(12,35,64,.25);padding-bottom:clamp(32px,5vw,48px)}
@@ -252,6 +254,7 @@
     </div>
     <a href="/Tech-Risk-Tracker/" class="featured-shot" aria-label="Open the Tech Risk Tracker">
       <img src="assets/tech-risk-tracker.png?v=20260710" alt="Screenshot of the Tech Risk Tracker daily edition front page">
+      <iframe id="trt-live" src="/Tech-Risk-Tracker/" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" title="Live Tech Risk Tracker front page (preview)"></iframe>
     </a>
   </div>
 </section>
@@ -450,6 +453,17 @@
       el.classList.add('reveal');
       io.observe(el);
     });
+  })();
+
+  // Scale the live tracker embed to the card: the iframe renders a 1280px-wide
+  // desktop viewport and is shrunk to the card's actual width.
+  (function(){
+    var f = document.getElementById('trt-live');
+    if (!f) return;
+    var fit = function(){ f.style.transform = 'scale(' + (f.parentElement.clientWidth / 1280) + ')'; };
+    if ('ResizeObserver' in window) new ResizeObserver(fit).observe(f.parentElement);
+    else window.addEventListener('resize', fit);
+    fit();
   })();
 </script>
 
