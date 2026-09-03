@@ -1,0 +1,5 @@
+# emergingtechrisk.com — open to all crawlers, including URL-categorization and reputation services.
+User-agent: *
+Allow: /
+
+Sitemap: https://emergingtechrisk.com/sitemap.xml
