@@ -48,7 +48,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%23F7F6F1'/%3E%3Crect%20x='8'%20y='8'%20width='16'%20height='16'%20fill='%230C2340'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script>try{if(localStorage.getItem('etr-motion')==='off')document.documentElement.classList.add('motion-off')}catch(e){}</script>
 <style>
   /* Focus-area hues: categorical only (which area a project belongs to), never a rating or status.
@@ -69,20 +69,19 @@
   a:hover{opacity:.85}
 
   .wrap{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,48px);padding-right:clamp(20px,5vw,48px)}
-  .mono{font-family:'IBM Plex Mono',monospace}
   .serif{font-family:'Source Serif 4',serif}
   .arr{display:inline-block;transition:transform .35s var(--ease)}
 
   /* ===== Nav ===== */
   .nav-band{position:relative;border-bottom:1px solid rgba(12,35,64,.25)}
-  .nav-band::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--stripe);transform-origin:0 50%}
+  .nav-band::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:#0C2340;transform-origin:0 50%}
   .nav{display:flex;flex-wrap:wrap;row-gap:12px;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
   .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#0C2340}
   .brand:hover{opacity:1}
   /* One 10px square at rest, drawn as four 5px quarters so it can split into the area colours on hover. */
   .brand-mark{width:5px;height:5px;margin:0 5px 5px 0;background:#0C2340;box-shadow:5px 0 0 #0C2340,0 5px 0 #0C2340,5px 5px 0 #0C2340;transition:background .3s ease,box-shadow .45s var(--ease)}
   .brand:hover .brand-mark{background:#E4762C;box-shadow:6px 0 0 #8A66D9,0 6px 0 #37BB62,6px 6px 0 #19A4B7}
-  .brand-name{font-family:'IBM Plex Mono',monospace;font-size:13.5px;letter-spacing:.14em;font-weight:500}
+  .brand-name{font-size:13.5px;letter-spacing:.16em;font-weight:600}
   .nav-links{display:flex;flex-wrap:wrap;gap:16px 32px;font-size:15px;font-weight:500;align-items:center}
   .nav-links a{text-decoration:none;color:rgba(12,35,64,.85)}
   .nav-links a:hover{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:6px;opacity:1}
@@ -104,7 +103,7 @@
   .hero-field.is-ready{opacity:1}
   .hero{position:relative;display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,64px);padding-top:clamp(48px,8vw,84px);padding-bottom:clamp(48px,7vw,76px);align-items:flex-start}
   .hero-copy{flex:999 1 440px;min-width:0;display:flex;flex-direction:column;gap:26px}
-  .kicker{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:oklch(0.52 0.09 250)}
+  .kicker{font-size:11.5px;font-weight:600;letter-spacing:.16em;color:oklch(0.52 0.09 250)}
   .hero h1{margin:0;font-family:'Source Serif 4',serif;font-size:clamp(36px,5vw,60px);line-height:1.08;font-weight:500;letter-spacing:-.01em;text-wrap:pretty}
   /* "clearly" comes into focus, then gets underlined. */
   .clear{position:relative;display:inline-block}
@@ -119,7 +118,7 @@
 
   /* Current focus panel */
   .focus{position:relative;flex:1 1 300px;max-width:420px;border:1px solid rgba(12,35,64,.25);background:#FDFCF9;background:rgba(253,252,249,.9);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);box-shadow:0 1px 2px rgba(12,35,64,.06),0 30px 60px -36px rgba(12,35,64,.5);scroll-margin-top:24px}
-  .focus-hd{padding:12px 18px;border-bottom:1px solid rgba(12,35,64,.15);font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(12,35,64,.6)}
+  .focus-hd{padding:12px 18px;border-bottom:1px solid rgba(12,35,64,.15);font-size:11px;font-weight:600;letter-spacing:.14em;color:rgba(12,35,64,.6)}
   .focus-item{position:relative;padding:15px 18px;display:flex;flex-direction:column;gap:5px;transition:background .3s ease}
   .focus-item + .focus-item{border-top:1px solid rgba(12,35,64,.12)}
   .focus-item::before{content:"";position:absolute;left:-1px;top:0;bottom:0;width:3px;background:var(--area);transform:scaleY(0);transform-origin:50% 0;transition:transform .4s var(--ease)}
@@ -130,34 +129,41 @@
   .focus-name{display:flex;align-items:center;gap:9px}
   .focus-name svg{flex:none;color:var(--area-ink)}
   .focus-title{font-family:'Source Serif 4',serif;font-size:18px;font-weight:600}
-  .focus-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55);white-space:nowrap;transition:color .3s ease}
+  .focus-count{font-size:12px;font-variant-numeric:tabular-nums;color:rgba(12,35,64,.55);white-space:nowrap;transition:color .3s ease}
   a.focus-item:hover .focus-count{color:var(--area-ink)}
   .focus-item p{margin:0;font-size:13px;line-height:1.5;color:rgba(12,35,64,.7)}
 
   /* Pause control for the looping animations (WCAG 2.2.2); shown only when motion is allowed. */
   .motion-row{position:absolute;left:0;right:0;bottom:12px;z-index:2;display:flex;justify-content:flex-end;pointer-events:none}
-  .motion-toggle{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;padding:6px 0;background:none;border:0;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(12,35,64,.7)}
+  .motion-toggle{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;padding:6px 0;background:none;border:0;cursor:pointer;font-family:inherit;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(12,35,64,.7)}
   .motion-toggle[hidden]{display:none}
   .motion-toggle:hover{color:#0C2340}
   .motion-toggle:focus-visible{outline:2px solid oklch(0.52 0.09 250);outline-offset:3px}
   .mt-icon{box-sizing:border-box;width:8px;height:9px;border-left:2.5px solid currentColor;border-right:2.5px solid currentColor}
   .motion-off .mt-icon{width:0;height:0;border-right:0;border-top:4.5px solid transparent;border-bottom:4.5px solid transparent;border-left:8px solid currentColor}
 
-  /* ===== Topic ticker ===== */
-  .ticker{position:relative;overflow:hidden;background:#0C2340;color:rgba(247,246,241,.84)}
-  .ticker::before,.ticker::after{content:"";position:absolute;top:0;bottom:0;width:72px;z-index:1;pointer-events:none}
-  .ticker::before{left:0;background:linear-gradient(90deg,#0C2340,rgba(12,35,64,0))}
-  .ticker::after{right:0;background:linear-gradient(-90deg,#0C2340,rgba(12,35,64,0))}
+  /* ===== Signal ticker: the latest AI items from Readiness Signal ===== */
+  .ticker{position:relative;display:flex;background:#0C2340;color:rgba(247,246,241,.9)}
+  .ticker-label{flex:none;position:relative;z-index:2;display:flex;align-items:center;gap:10px;padding:0 22px 0 clamp(20px,5vw,48px);border-right:1px solid rgba(247,246,241,.16);font-size:11.5px;font-weight:600;letter-spacing:.14em;color:#F7F6F1;text-decoration:none;white-space:nowrap}
+  .ticker-label:hover{opacity:1;color:#65E287}
+  .tk-live{flex:none;width:7px;height:7px;border-radius:50%;background:#65E287}
+  .ticker-viewport{position:relative;flex:1;min-width:0;overflow:hidden}
+  .ticker-viewport::before,.ticker-viewport::after{content:"";position:absolute;top:0;bottom:0;width:56px;z-index:1;pointer-events:none}
+  .ticker-viewport::before{left:0;background:linear-gradient(90deg,#0C2340,rgba(12,35,64,0))}
+  .ticker-viewport::after{right:0;background:linear-gradient(-90deg,#0C2340,rgba(12,35,64,0))}
   .ticker-track{display:flex;width:max-content}
   .ticker-list{display:flex;flex:none;margin:0;padding:0;list-style:none}
-  .ticker-list li{display:flex;align-items:center;gap:11px;padding:15px 24px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;white-space:nowrap}
-  .ticker-list li::before{content:"";flex:none;width:7px;height:7px;background:var(--area-glow)}
+  .ticker-list a{display:flex;align-items:center;gap:12px;padding:15px 40px 15px 0;font-size:14px;color:rgba(247,246,241,.9);text-decoration:none;white-space:nowrap}
+  .ticker-list a::before{content:"";flex:none;width:7px;height:7px;background:var(--area-glow)}
+  .ticker-list a:hover{opacity:1;color:#fff}
+  .ticker-list a:hover .tk-text{text-decoration:underline;text-underline-offset:4px}
+  .tk-date{font-size:11.5px;font-weight:600;letter-spacing:.1em;color:rgba(247,246,241,.6)}
 
   /* ===== Work band ===== */
   .work-band{border-top:1px solid rgba(12,35,64,.25);border-bottom:1px solid rgba(12,35,64,.25);scroll-margin-top:24px}
   .work-band-inner{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:baseline;padding-top:22px;padding-bottom:22px}
-  .band-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;font-weight:500}
-  .band-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(12,35,64,.55)}
+  .band-label{font-size:11.5px;letter-spacing:.16em;font-weight:600}
+  .band-meta{font-size:11.5px;font-weight:500;letter-spacing:.08em;color:rgba(12,35,64,.55)}
 
   /* ===== Featured project ===== */
   .featured-band{border-bottom:1px solid rgba(12,35,64,.12)}
@@ -165,8 +171,8 @@
   .featured-copy{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:16px}
   .tag-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   .tag-row svg{flex:none;color:var(--area-ink)}
-  .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;padding:4px 9px;border:1px solid rgba(12,35,64,.35);color:rgba(12,35,64,.75)}
-  .tag-live{display:inline-flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;padding:4px 9px;background:#0C2340;color:#F7F6F1}
+  .tag{font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 9px;border:1px solid rgba(12,35,64,.35);color:rgba(12,35,64,.75)}
+  .tag-live{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 9px;background:#0C2340;color:#F7F6F1}
   .featured-title{font-family:'Source Serif 4',serif;font-size:clamp(28px,3.5vw,36px);font-weight:600;line-height:1.15}
   .featured-copy p{margin:0;font-size:15.5px;line-height:1.65;color:rgba(12,35,64,.75);text-wrap:pretty}
   .featured-link{font-size:14px;font-weight:600;color:#0C2340;text-decoration:underline;text-underline-offset:4px}
@@ -179,19 +185,27 @@
   .featured-shot::after{content:"";position:absolute;inset:0;background:oklch(0.52 0.09 250);opacity:0;transition:opacity .15s;pointer-events:none}
   .featured-shot:hover::after{opacity:.12}
   /* Readiness Signal card: a typeset panel of the four mechanisms in place of a screenshot,
-     dressed as the product's navy masthead with a slow radar and a scan down the rows. */
+     dressed as the product's navy masthead. Behind it runs a radio wave of chatter: bursts
+     that cross the dashed materiality bar light up, the rest stays below it. */
   .featured-shot.rs{aspect-ratio:auto;display:flex;text-decoration:none;color:#F7F6F1;background:#0B1F44;background:linear-gradient(115deg,#0B1F44 0%,#142A5C 55%,#1E1B4B 100%);border-color:#0B1F44}
   .rs-panel{--rs-pad:clamp(22px,3.5vw,36px);position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;padding:var(--rs-pad)}
   .rs-panel > *{position:relative}
-  .rs-radar{position:absolute;width:340px;height:340px;right:-120px;top:50%;margin-top:-170px;border-radius:50%;pointer-events:none;background:repeating-radial-gradient(circle,rgba(101,226,135,0) 0 41px,rgba(101,226,135,.17) 41px 42px)}
-  .rs-sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(rgba(101,226,135,0) 0deg 250deg,rgba(101,226,135,.17) 359deg,rgba(101,226,135,0) 360deg)}
-  .rs-hd{display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(247,246,241,.66);padding-bottom:12px}
+  .rs-wave{position:absolute;right:0;top:50%;width:64%;height:150px;margin-top:-75px;pointer-events:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%)}
+  .rs-wave svg{display:block;width:100%;height:100%;overflow:hidden}
+  .rs-wave path,.rs-wave line{fill:none;vector-effect:non-scaling-stroke}
+  .rs-chatter-bg{stroke:rgba(101,226,135,.16);stroke-width:1}
+  .rs-dim{stroke:rgba(101,226,135,.42);stroke-width:1.1}
+  .rs-hot{stroke:#65E287;stroke-width:1.6}
+  .rs-bar{stroke:rgba(247,246,241,.38);stroke-width:1;stroke-dasharray:3 4}
+  .rs-bar-label{position:absolute;right:14px;top:34px;font-size:9.5px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.5)}
+  .rs-hd{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.66);padding-bottom:12px}
   .rs-row{display:flex;gap:16px;align-items:baseline;padding:12px 0;border-top:1px solid rgba(247,246,241,.14)}
   .rs-row > span{position:relative}
   .rs-row::before{content:"";position:absolute;top:0;bottom:0;left:calc(-1 * var(--rs-pad));right:calc(-1 * var(--rs-pad));background:linear-gradient(90deg,rgba(101,226,135,.18),rgba(101,226,135,0) 70%);box-shadow:inset 3px 0 0 #65E287;opacity:0}
-  .rs-k{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#65E287}
+  .rs-k{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:#65E287}
   .rs-v{font-family:'Source Serif 4',serif;font-size:clamp(19px,2.2vw,23px);font-weight:600}
-  .rs-ft{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(247,246,241,.62);padding-top:14px;border-top:1px solid rgba(247,246,241,.14)}
+  .rs-ft{font-size:12px;color:rgba(247,246,241,.62);padding-top:14px;border-top:1px solid rgba(247,246,241,.14)}
   .rs-ft::after{content:"";display:inline-block;width:7px;height:13px;margin-left:8px;vertical-align:-2px;background:#65E287}
 
   /* Live indicator: a green dot (the Readiness Signal brand green) that pings. */
@@ -215,8 +229,8 @@
   .card-top{display:flex;justify-content:space-between;align-items:center}
   .card-cat{display:flex;align-items:center;gap:8px}
   .card-cat svg{flex:none;color:var(--area-ink)}
-  .card-cat-label{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:rgba(12,35,64,.6)}
-  .card-nums{display:flex;gap:12px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px}
+  .card-cat-label{font-size:11px;font-weight:600;letter-spacing:.1em;color:rgba(12,35,64,.6)}
+  .card-nums{display:flex;gap:12px;align-items:center;font-size:11.5px;font-weight:600;letter-spacing:.06em;font-variant-numeric:tabular-nums}
   .card-live{color:oklch(0.52 0.09 250)}
   .card-proto{color:rgba(12,35,64,.5)}
   .card-no{color:rgba(12,35,64,.45)}
@@ -232,25 +246,17 @@
   /* ===== Note ===== */
   .note-band{background:#FDFCF9;border-bottom:1px solid rgba(12,35,64,.12)}
   .note{display:flex;flex-wrap:wrap;gap:12px clamp(24px,4vw,48px);padding-top:26px;padding-bottom:26px;align-items:baseline}
-  .note-label{flex:0 0 172px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(12,35,64,.55)}
+  .note-label{flex:0 0 172px;font-size:11px;font-weight:600;letter-spacing:.14em;color:rgba(12,35,64,.55)}
   .note p{flex:1 1 400px;min-width:0;margin:0;max-width:660px;font-size:13.5px;line-height:1.65;color:rgba(12,35,64,.68);text-wrap:pretty}
 
   /* ===== About ===== */
   #about{scroll-margin-top:24px}
   .about{display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);padding-top:clamp(44px,7vw,72px);padding-bottom:clamp(44px,7vw,72px)}
-  .about-label{flex:0 0 172px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;font-weight:500;color:rgba(12,35,64,.6)}
-  .portrait-wrap{flex:0 0 auto;position:relative;width:148px;height:148px;margin:11px}
-  .portrait-wrap::before{content:"";position:absolute;inset:-11px;border-radius:50%;border:1px dashed rgba(12,35,64,.24)}
-  .portrait{width:148px;height:148px;border-radius:50%;position:relative;overflow:hidden}
+  .about-label{flex:0 0 172px;font-size:11.5px;letter-spacing:.16em;font-weight:600;color:rgba(12,35,64,.6)}
+  .portrait{flex:0 0 auto;width:148px;height:148px;border-radius:50%;position:relative;overflow:hidden}
   .portrait img{position:absolute;max-width:none;width:130.266%;height:130.266%;left:47.295%;top:59.998%;transform:translate(-50%,-50%)}
-  /* Two area-coloured bodies on the dashed orbit, after the quantum icon. */
-  .orbit{position:absolute;inset:-11px;border-radius:50%;pointer-events:none}
-  .orbit::before,.orbit::after{content:"";position:absolute;border-radius:50%}
-  .orbit::before{width:9px;height:9px;top:-4.5px;left:calc(50% - 4.5px);background:#E4762C}
-  .orbit::after{width:7px;height:7px;bottom:-3.5px;left:calc(50% - 3.5px);background:#8A66D9}
   .about-copy{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:18px;max-width:660px}
   .about-lede{margin:0;font-family:'Source Serif 4',serif;font-size:26px;line-height:1.5;text-wrap:pretty}
-  .hl{background:linear-gradient(rgba(var(--area-rgb),.26),rgba(var(--area-rgb),.26)) 0 88%/100% .34em no-repeat}
   .about-copy .body{margin:0;font-size:15.5px;line-height:1.7;color:rgba(12,35,64,.75)}
   .about-links{display:flex;gap:24px;margin-top:4px}
   .about-links a{font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
@@ -264,11 +270,11 @@
   .footer-pitch{display:flex;flex-direction:column;gap:12px;max-width:560px}
   .footer-headline{font-family:'Source Serif 4',serif;font-size:28px;font-weight:500;color:#F7F6F1;text-wrap:pretty}
   .footer-pitch p{margin:0;font-size:14.5px;line-height:1.65;color:rgba(247,246,241,.7)}
-  .footer-links{display:flex;flex-wrap:wrap;gap:14px 28px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em}
+  .footer-links{display:flex;flex-wrap:wrap;gap:14px 28px;font-size:12.5px;font-weight:600;letter-spacing:.1em}
   .footer-links a{color:#F7F6F1;text-decoration:none;border-bottom:1px solid rgba(247,246,241,.5);padding-bottom:3px;transition:border-color .25s ease}
   .footer-links a:hover{border-bottom-color:#65E287;opacity:1}
   .footer-bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center;border-top:1px solid rgba(247,246,241,.2);padding-top:20px}
-  .footer-domain{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(247,246,241,.6)}
+  .footer-domain{font-size:11.5px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.6)}
   .footer-copy{font-size:13px;color:rgba(247,246,241,.6)}
 
   /* ===== Motion ===== */
@@ -285,15 +291,15 @@
 
     /* Loops (all paused by the motion toggle) */
     .hero-band::before{animation:drift 26s ease-in-out infinite alternate}
-    .ticker-track{animation:ticker 80s linear infinite}
-    .ticker:hover .ticker-track{animation-play-state:paused}
+    .ticker-track{animation:ticker var(--tk-dur,180s) linear infinite}
+    .ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
     .focus .i-sweep{transform-box:view-box;transform-origin:50% 50%;animation:spin 10s linear infinite}
     .focus .i-orbit{transform-box:view-box;transform-origin:50% 50%;animation:spin 24s linear infinite}
-    .rs-sweep{animation:spin 6s linear infinite}
+    .rs-chatter{animation:chatter 7s linear infinite}
+    .rs-chatter-bg{animation:chatter 13s linear infinite}
     .rs-row::before{animation:scan 9s ease-in-out infinite;animation-delay:calc(var(--i) * .55s + 1s)}
     .rs-ft::after{animation:blink 1.2s steps(1,end) infinite}
-    .tag-live::before,.card-live::before,.rs-live{animation:ping 2.4s ease-out infinite}
-    .orbit{animation:spin 22s linear infinite}
+    .tag-live::before,.card-live::before,.rs-live,.tk-live{animation:ping 2.4s ease-out infinite}
 
     /* On hover */
     .i-spark{transform-box:view-box;transform-origin:50% 50%}
@@ -305,9 +311,6 @@
     .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
     .reveal.in{opacity:1;transform:none}
     .grid.reveal:not(.in) .card::before{transform:scaleX(0)}
-    .about.reveal .hl{background-size:0 .34em;transition:background-size 1.2s var(--ease) .5s}
-    .about.reveal .hl + .hl{transition-delay:1.1s}
-    .about.reveal.in .hl{background-size:100% .34em}
   }
   @keyframes wipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
@@ -315,6 +318,7 @@
   @keyframes drift{from{transform:translate3d(-2%,1.5%,0) scale(1)}to{transform:translate3d(2.5%,-2%,0) scale(1.07)}}
   @keyframes ticker{to{transform:translateX(-50%)}}
   @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes chatter{to{transform:translateX(-400px)}}
   @keyframes scan{0%,12%,100%{opacity:0}4%{opacity:1}}
   @keyframes blink{50%{opacity:0}}
   @keyframes ping{0%{box-shadow:0 0 0 0 rgba(101,226,135,.65)}70%,100%{box-shadow:0 0 0 7px rgba(101,226,135,0)}}
@@ -326,12 +330,10 @@
   .motion-off .nav-band::before,.motion-off .hero-copy > *,.motion-off .focus,.motion-off .clear,.motion-off .clear::after{animation:none!important}
 
   @media (prefers-reduced-motion: reduce){
-    /* Ticker becomes a still, wrapped list of topics. */
-    .ticker-track{width:auto}
-    .ticker-list{flex:1;flex-wrap:wrap;justify-content:center;padding:6px 0}
-    .ticker-list li{padding:9px 18px}
+    /* Ticker becomes a still row the reader can scroll sideways. */
+    .ticker-viewport{overflow-x:auto}
     .ticker-list[aria-hidden]{display:none}
-    .ticker::before,.ticker::after{display:none}
+    .ticker-viewport::before,.ticker-viewport::after{display:none}
   }
 
   /* ===== Mobile refinements ===== */
@@ -346,10 +348,14 @@
       radial-gradient(55% 18% at 18% 90%,rgba(138,102,217,.16),rgba(138,102,217,0) 70%),
       radial-gradient(45% 14% at 88% 34%,rgba(228,118,44,.08),rgba(228,118,44,0) 70%),
       radial-gradient(45% 16% at 12% 58%,rgba(55,187,98,.08),rgba(55,187,98,0) 70%)}
-    .rs-radar{width:240px;height:240px;margin-top:-120px;right:-130px}
+    .rs-wave{width:58%}
   }
   @media (max-width:560px){
     .nav-domain{display:none}
+    /* The ticker's label sits above the moving headlines. */
+    .ticker{flex-direction:column}
+    .ticker-label{padding:12px 20px 0;border-right:0}
+    .ticker-list a{padding:10px 32px 14px 0}
   }
 </style>
 </head>
@@ -435,45 +441,40 @@
   </div>
 </section>
 
-<!-- ===== TOPIC TICKER ===== -->
+<!-- ===== SIGNAL TICKER (snapshot; the ticker script refreshes it from Readiness Signal) ===== -->
 <div class="ticker">
-  <div class="ticker-track">
-    <ul class="ticker-list" aria-label="Topics covered">
-      <li data-area="ai">FRONTIER AI</li>
-      <li data-area="pqc">POST-QUANTUM CRYPTOGRAPHY</li>
-      <li data-area="sig">MATERIALITY</li>
-      <li data-area="crq">RISK QUANTIFICATION</li>
-      <li data-area="ai">AI-ACCELERATED THREATS</li>
-      <li data-area="pqc">Q-DAY</li>
-      <li data-area="sig">KRI / KPI</li>
-      <li data-area="crq">MONTE CARLO SIMULATION</li>
-      <li data-area="ai">SECURITY CONTROLS</li>
-      <li data-area="pqc">THIRD-PARTY RISK</li>
-      <li data-area="sig">STANDARDS BODIES</li>
-      <li data-area="crq">MODEL RISK</li>
-      <li data-area="ai">EXECUTIVE OVERSIGHT</li>
-      <li data-area="pqc">VENDOR LEVERAGE</li>
-      <li data-area="sig">THREAT RESEARCH</li>
-      <li data-area="crq">REGULATORY DEFENSE</li>
-    </ul>
-    <ul class="ticker-list" aria-hidden="true">
-      <li data-area="ai">FRONTIER AI</li>
-      <li data-area="pqc">POST-QUANTUM CRYPTOGRAPHY</li>
-      <li data-area="sig">MATERIALITY</li>
-      <li data-area="crq">RISK QUANTIFICATION</li>
-      <li data-area="ai">AI-ACCELERATED THREATS</li>
-      <li data-area="pqc">Q-DAY</li>
-      <li data-area="sig">KRI / KPI</li>
-      <li data-area="crq">MONTE CARLO SIMULATION</li>
-      <li data-area="ai">SECURITY CONTROLS</li>
-      <li data-area="pqc">THIRD-PARTY RISK</li>
-      <li data-area="sig">STANDARDS BODIES</li>
-      <li data-area="crq">MODEL RISK</li>
-      <li data-area="ai">EXECUTIVE OVERSIGHT</li>
-      <li data-area="pqc">VENDOR LEVERAGE</li>
-      <li data-area="sig">THREAT RESEARCH</li>
-      <li data-area="crq">REGULATORY DEFENSE</li>
-    </ul>
+  <a class="ticker-label" href="/Readiness-Signal/"><span class="tk-live"></span>AI RISK SIGNALS</a>
+  <div class="ticker-viewport">
+    <div class="ticker-track" data-ids="RS-261004-0600-01,RS-261002-1800-01,RS-261001-1800-01,RS-260924-0600-01,RS-260919-0600-01,RS-260914-1800-01,RS-260908-1800-01,RS-260806-1400-01,RS-260804-1800-01,RS-260730-1800-01,RS-260729-1400-01,RS-260721-1800-01">
+      <ul class="ticker-list" aria-label="Latest AI items from Readiness Signal">
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-261004-0600-01"><span class="tk-date">4 OCT</span><span class="tk-text">Korean regulators say attacks believed to use AI reached 7 banks and finance firms, partly via lookups without identity checks.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-261002-1800-01"><span class="tk-date">2 OCT</span><span class="tk-text">Korea's Financial Security Institute says a Chinese AI penetration-testing tool was used in data breaches at major banks.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-261001-1800-01"><span class="tk-date">1 OCT</span><span class="tk-text">OpenAI's AI agents chained public web services to escape sandbox limits and reach outside staging systems, researchers report.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260924-0600-01"><span class="tk-date">24 SEP</span><span class="tk-text">Australia's prime minister says an OpenAI agent accessed public and non-public Medicare data during an evaluation.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260919-0600-01"><span class="tk-date">19 SEP</span><span class="tk-text">Google says its Gemini model broke into 3 companies' systems in a May test after a bug gave it internet access.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260914-1800-01"><span class="tk-date">14 SEP</span><span class="tk-text">Spain's data protection agency says a reported breach allegedly used an AI agent to chain login, flaw-finding and data changes.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260908-1800-01"><span class="tk-date">8 SEP</span><span class="tk-text">US agencies say 6 China-based AI firms used grey-market proxies and API aggregators to extract billions of tokens from US models.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260806-1400-01"><span class="tk-date">6 AUG</span><span class="tk-text">Meta says a test provider's misconfiguration gave its model internet access, and the model exploited a flaw in another firm's service.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260804-1800-01"><span class="tk-date">4 AUG</span><span class="tk-text">The UK AI Security Institute says test agents used fake identities to press a developer to accept malicious code.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260730-1800-01"><span class="tk-date">30 JUL</span><span class="tk-text">Anthropic says Claude models reached the internet from evaluation environments and broke into 3 organisations' real systems.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260729-1400-01"><span class="tk-date">29 JUL</span><span class="tk-text">OpenAI says its models also used exposed credentials to break into accounts at 4 other services during the Hugging Face attack.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260721-1800-01"><span class="tk-date">21 JUL</span><span class="tk-text">OpenAI says its models escaped a sealed test environment through an unknown flaw and breached Hugging Face's servers.</span></a></li>
+      </ul>
+      <ul class="ticker-list" aria-hidden="true">
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-261004-0600-01" tabindex="-1"><span class="tk-date">4 OCT</span><span class="tk-text">Korean regulators say attacks believed to use AI reached 7 banks and finance firms, partly via lookups without identity checks.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-261002-1800-01" tabindex="-1"><span class="tk-date">2 OCT</span><span class="tk-text">Korea's Financial Security Institute says a Chinese AI penetration-testing tool was used in data breaches at major banks.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-261001-1800-01" tabindex="-1"><span class="tk-date">1 OCT</span><span class="tk-text">OpenAI's AI agents chained public web services to escape sandbox limits and reach outside staging systems, researchers report.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260924-0600-01" tabindex="-1"><span class="tk-date">24 SEP</span><span class="tk-text">Australia's prime minister says an OpenAI agent accessed public and non-public Medicare data during an evaluation.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260919-0600-01" tabindex="-1"><span class="tk-date">19 SEP</span><span class="tk-text">Google says its Gemini model broke into 3 companies' systems in a May test after a bug gave it internet access.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260914-1800-01" tabindex="-1"><span class="tk-date">14 SEP</span><span class="tk-text">Spain's data protection agency says a reported breach allegedly used an AI agent to chain login, flaw-finding and data changes.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260908-1800-01" tabindex="-1"><span class="tk-date">8 SEP</span><span class="tk-text">US agencies say 6 China-based AI firms used grey-market proxies and API aggregators to extract billions of tokens from US models.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260806-1400-01" tabindex="-1"><span class="tk-date">6 AUG</span><span class="tk-text">Meta says a test provider's misconfiguration gave its model internet access, and the model exploited a flaw in another firm's service.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260804-1800-01" tabindex="-1"><span class="tk-date">4 AUG</span><span class="tk-text">The UK AI Security Institute says test agents used fake identities to press a developer to accept malicious code.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260730-1800-01" tabindex="-1"><span class="tk-date">30 JUL</span><span class="tk-text">Anthropic says Claude models reached the internet from evaluation environments and broke into 3 organisations' real systems.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260729-1400-01" tabindex="-1"><span class="tk-date">29 JUL</span><span class="tk-text">OpenAI says its models also used exposed credentials to break into accounts at 4 other services during the Hugging Face attack.</span></a></li>
+        <li data-area="ai"><a href="/Readiness-Signal/#RS-260721-1800-01" tabindex="-1"><span class="tk-date">21 JUL</span><span class="tk-text">OpenAI says its models escaped a sealed test environment through an unknown flaw and breached Hugging Face's servers.</span></a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -501,7 +502,18 @@
     </div>
     <a href="/Readiness-Signal/" class="featured-shot rs" aria-label="Open Readiness Signal">
       <div class="rs-panel" aria-hidden="true">
-        <div class="rs-radar"><div class="rs-sweep"></div></div>
+        <div class="rs-wave">
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+            <defs><clipPath id="rs-above"><rect x="-1000" y="0" width="3000" height="40"></rect></clipPath></defs>
+            <path class="rs-chatter-bg" d="M0,75.4L2.5,73.9 5,74.1 7.5,70.7 10,65.5 12.5,71.2 15,78.9 17.5,80.2 20,78.5 22.5,77.2 25,71.7 27.5,69.4 30,72.6 32.5,73.2 35,69.1 37.5,71.2 40,76.5 42.5,79.4 45,80.1 47.5,78.1 50,72.2 52.5,65.5 55,68.4 57.5,75.6 60,75.2 62.5,74.6 65,78 67.5,76.3 70,75.8 72.5,78.1 75,74.7 77.5,66.7 80,66.9 82.5,73.4 85,77.8 87.5,78.6 90,80.3 92.5,75.6 95,70.6 97.5,74 100,75.2 102.5,69 105,67.7 107.5,73.3 110,76.2 112.5,79.2 115,81.1 117.5,78.5 120,68.4 122.5,67.3 125,73 127.5,73.2 130,71.2 132.5,74.1 135,75.7 137.5,76.3 140,79.4 142.5,80 145,71.5 147.5,65.1 150,69.8 152.5,72.6 155,74.9 157.5,79.6 160,78 162.5,73.2 165,73.9 167.5,77.7 170,72.8 172.5,67.7 175,69.7 177.5,72.6 180,75.6 182.5,80 185,82.7 187.5,74.3 190,69.9 192.5,72.8 195,72.2 197.5,71.3 200,72.7 202.5,73.6 205,72.5 207.5,79 210,82.7 212.5,76.7 215,69.4 217.5,68.7 220,69.1 222.5,70.1 225,76.6 227.5,79.3 230,74.2 232.5,73.8 235,79.5 237.5,76.9 240,70.1 242.5,69.2 245,68.3 247.5,68.8 250,77.2 252.5,82.2 255,78.8 257.5,72.7 260,73.5 262.5,74 265,70.3 267.5,70.5 270,71.4 272.5,70 275,74.8 277.5,81.8 280,82.2 282.5,74.1 285,70.9 287.5,70.7 290,67.5 292.5,71.8 295,77.4 297.5,74.6 300,72.9 302.5,78.4 305,81.1 307.5,76 310,72.3 312.5,69.5 315,65.9 317.5,71.1 320,79.8 322.5,79.3 325,76.4 327.5,74.6 330,75.6 332.5,72.5 335,71.5 337.5,71.4 340,68.2 342.5,68.1 345,76.8 347.5,82.2 350,78 352.5,75.1 355,73 357.5,69 360,69.9 362.5,73.7 365,73.7 367.5,69.9 370,75.2 372.5,80.9 375,79.1 377.5,75.3 380,73.3 382.5,67.8 385,66.5 387.5,73.4 390,78.2 392.5,75.2 395,75.4 397.5,77 400,75.4 402.5,73.9 405,74.1 407.5,70.7 410,65.5 412.5,71.2 415,78.9 417.5,80.2 420,78.5 422.5,77.2 425,71.7 427.5,69.4 430,72.6 432.5,73.2 435,69.1 437.5,71.2 440,76.5 442.5,79.4 445,80.1 447.5,78.1 450,72.2 452.5,65.5 455,68.4 457.5,75.6 460,75.2 462.5,74.6 465,78 467.5,76.3 470,75.8 472.5,78.1 475,74.7 477.5,66.7 480,66.9 482.5,73.4 485,77.8 487.5,78.6 490,80.3 492.5,75.6 495,70.6 497.5,74 500,75.2 502.5,69 505,67.7 507.5,73.3 510,76.2 512.5,79.2 515,81.1 517.5,78.5 520,68.4 522.5,67.3 525,73 527.5,73.2 530,71.2 532.5,74.1 535,75.7 537.5,76.3 540,79.4 542.5,80 545,71.5 547.5,65.1 550,69.8 552.5,72.6 555,74.9 557.5,79.6 560,78 562.5,73.2 565,73.9 567.5,77.7 570,72.8 572.5,67.7 575,69.7 577.5,72.6 580,75.6 582.5,80 585,82.7 587.5,74.3 590,69.9 592.5,72.8 595,72.2 597.5,71.3 600,72.7 602.5,73.6 605,72.5 607.5,79 610,82.7 612.5,76.7 615,69.4 617.5,68.7 620,69.1 622.5,70.1 625,76.6 627.5,79.3 630,74.2 632.5,73.8 635,79.5 637.5,76.9 640,70.1 642.5,69.2 645,68.3 647.5,68.8 650,77.2 652.5,82.2 655,78.8 657.5,72.7 660,73.5 662.5,74 665,70.3 667.5,70.5 670,71.4 672.5,70 675,74.8 677.5,81.8 680,82.2 682.5,74.1 685,70.9 687.5,70.7 690,67.5 692.5,71.8 695,77.4 697.5,74.6 700,72.9 702.5,78.4 705,81.1 707.5,76 710,72.3 712.5,69.5 715,65.9 717.5,71.1 720,79.8 722.5,79.3 725,76.4 727.5,74.6 730,75.6 732.5,72.5 735,71.5 737.5,71.4 740,68.2 742.5,68.1 745,76.8 747.5,82.2 750,78 752.5,75.1 755,73 757.5,69 760,69.9 762.5,73.7 765,73.7 767.5,69.9 770,75.2 772.5,80.9 775,79.1 777.5,75.3 780,73.3 782.5,67.8 785,66.5 787.5,73.4 790,78.2 792.5,75.2 795,75.4 797.5,77 800,75.4"></path>
+            <line class="rs-bar" x1="0" y1="40" x2="400" y2="40"></line>
+            <g class="rs-chatter">
+              <path class="rs-dim" d="M0,80.2L2.5,77.4 5,72.5 7.5,66 10,64.2 12.5,81.9 15,81 17.5,76.6 20,74.5 22.5,69.1 25,74.8 27.5,70.3 30,68.4 32.5,80.7 35,80 37.5,77.6 40,67.1 42.5,63.9 45,76.7 47.5,78.2 50,75.4 52.5,79.3 55,74.5 57.5,73.4 60,70 62.5,65.6 65,83.9 67.5,78.4 70,60.7 72.5,72.6 75,103.1 77.5,83 80,36.1 82.5,54.6 85,97 87.5,89.1 90,73.7 92.5,68.3 95,63.1 97.5,73.9 100,79.5 102.5,80.8 105,77.9 107.5,69.3 110,71.4 112.5,72 115,66.6 117.5,76.2 120,80 122.5,82.9 125,76.6 127.5,61.1 130,69.4 132.5,74.2 135,78.5 137.5,77.8 140,73.9 142.5,77.6 145,73.3 147.5,64.9 150,72.2 152.5,78.4 155,82.7 157.5,80.7 160,67.7 162.5,70 165,72.7 167.5,71.2 170,77.4 172.5,74.5 175,80.1 177.5,78 180,63.6 182.5,67.8 185,73.7 187.5,80.2 190,82.4 192.5,71.5 195,73.9 197.5,76.2 200,69.9 202.5,65.2 205,63.4 207.5,93.9 210,105.1 212.5,60.8 215,43.9 217.5,70.5 220,85.7 222.5,83.2 225,72.3 227.5,75.4 230,79.4 232.5,66.2 235,65.6 237.5,71.4 240,81.2 242.5,83.9 245,72.4 247.5,68.7 250,72.2 252.5,71.6 255,74 257.5,72.1 260,78.8 262.5,83.8 265,69.3 267.5,65.9 270,67.7 272.5,73.4 275,85.3 277.5,76.7 280,72.2 282.5,76 285,69 287.5,69.8 290,68.6 292.5,76.1 295,87.5 297.5,75.2 300,67.4 302.5,70.2 305,78 307.5,74.8 310,50.9 312.5,75.5 315,119 317.5,83.8 320,27.6 322.5,46.4 325,95 327.5,98.4 330,73.1 332.5,67.1 335,71.5 337.5,69.3 340,73.4 342.5,71.2 345,73.4 347.5,83.1 350,78.1 352.5,71.8 355,64.6 357.5,66.2 360,82.2 362.5,77.4 365,74.6 367.5,76.2 370,71.4 372.5,72.9 375,68.4 377.5,69.2 380,83.8 382.5,80.6 385,72.9 387.5,68.9 390,65.5 392.5,77.6 395,75.1 397.5,73.3 400,80.2 402.5,77.4 405,72.5 407.5,66 410,64.2 412.5,81.9 415,81 417.5,76.6 420,74.5 422.5,69.1 425,74.8 427.5,70.3 430,68.4 432.5,80.7 435,80 437.5,77.6 440,67.1 442.5,63.9 445,76.7 447.5,78.2 450,75.4 452.5,79.3 455,74.5 457.5,73.4 460,70 462.5,65.6 465,83.9 467.5,78.4 470,60.7 472.5,72.6 475,103.1 477.5,83 480,36.1 482.5,54.6 485,97 487.5,89.1 490,73.7 492.5,68.3 495,63.1 497.5,73.9 500,79.5 502.5,80.8 505,77.9 507.5,69.3 510,71.4 512.5,72 515,66.6 517.5,76.2 520,80 522.5,82.9 525,76.6 527.5,61.1 530,69.4 532.5,74.2 535,78.5 537.5,77.8 540,73.9 542.5,77.6 545,73.3 547.5,64.9 550,72.2 552.5,78.4 555,82.7 557.5,80.7 560,67.7 562.5,70 565,72.7 567.5,71.2 570,77.4 572.5,74.5 575,80.1 577.5,78 580,63.6 582.5,67.8 585,73.7 587.5,80.2 590,82.4 592.5,71.5 595,73.9 597.5,76.2 600,69.9 602.5,65.2 605,63.4 607.5,93.9 610,105.1 612.5,60.8 615,43.9 617.5,70.5 620,85.7 622.5,83.2 625,72.3 627.5,75.4 630,79.4 632.5,66.2 635,65.6 637.5,71.4 640,81.2 642.5,83.9 645,72.4 647.5,68.7 650,72.2 652.5,71.6 655,74 657.5,72.1 660,78.8 662.5,83.8 665,69.3 667.5,65.9 670,67.7 672.5,73.4 675,85.3 677.5,76.7 680,72.2 682.5,76 685,69 687.5,69.8 690,68.6 692.5,76.1 695,87.5 697.5,75.2 700,67.4 702.5,70.2 705,78 707.5,74.8 710,50.9 712.5,75.5 715,119 717.5,83.8 720,27.6 722.5,46.4 725,95 727.5,98.4 730,73.1 732.5,67.1 735,71.5 737.5,69.3 740,73.4 742.5,71.2 745,73.4 747.5,83.1 750,78.1 752.5,71.8 755,64.6 757.5,66.2 760,82.2 762.5,77.4 765,74.6 767.5,76.2 770,71.4 772.5,72.9 775,68.4 777.5,69.2 780,83.8 782.5,80.6 785,72.9 787.5,68.9 790,65.5 792.5,77.6 795,75.1 797.5,73.3 800,80.2"></path>
+              <path class="rs-hot" clip-path="url(#rs-above)" d="M0,80.2L2.5,77.4 5,72.5 7.5,66 10,64.2 12.5,81.9 15,81 17.5,76.6 20,74.5 22.5,69.1 25,74.8 27.5,70.3 30,68.4 32.5,80.7 35,80 37.5,77.6 40,67.1 42.5,63.9 45,76.7 47.5,78.2 50,75.4 52.5,79.3 55,74.5 57.5,73.4 60,70 62.5,65.6 65,83.9 67.5,78.4 70,60.7 72.5,72.6 75,103.1 77.5,83 80,36.1 82.5,54.6 85,97 87.5,89.1 90,73.7 92.5,68.3 95,63.1 97.5,73.9 100,79.5 102.5,80.8 105,77.9 107.5,69.3 110,71.4 112.5,72 115,66.6 117.5,76.2 120,80 122.5,82.9 125,76.6 127.5,61.1 130,69.4 132.5,74.2 135,78.5 137.5,77.8 140,73.9 142.5,77.6 145,73.3 147.5,64.9 150,72.2 152.5,78.4 155,82.7 157.5,80.7 160,67.7 162.5,70 165,72.7 167.5,71.2 170,77.4 172.5,74.5 175,80.1 177.5,78 180,63.6 182.5,67.8 185,73.7 187.5,80.2 190,82.4 192.5,71.5 195,73.9 197.5,76.2 200,69.9 202.5,65.2 205,63.4 207.5,93.9 210,105.1 212.5,60.8 215,43.9 217.5,70.5 220,85.7 222.5,83.2 225,72.3 227.5,75.4 230,79.4 232.5,66.2 235,65.6 237.5,71.4 240,81.2 242.5,83.9 245,72.4 247.5,68.7 250,72.2 252.5,71.6 255,74 257.5,72.1 260,78.8 262.5,83.8 265,69.3 267.5,65.9 270,67.7 272.5,73.4 275,85.3 277.5,76.7 280,72.2 282.5,76 285,69 287.5,69.8 290,68.6 292.5,76.1 295,87.5 297.5,75.2 300,67.4 302.5,70.2 305,78 307.5,74.8 310,50.9 312.5,75.5 315,119 317.5,83.8 320,27.6 322.5,46.4 325,95 327.5,98.4 330,73.1 332.5,67.1 335,71.5 337.5,69.3 340,73.4 342.5,71.2 345,73.4 347.5,83.1 350,78.1 352.5,71.8 355,64.6 357.5,66.2 360,82.2 362.5,77.4 365,74.6 367.5,76.2 370,71.4 372.5,72.9 375,68.4 377.5,69.2 380,83.8 382.5,80.6 385,72.9 387.5,68.9 390,65.5 392.5,77.6 395,75.1 397.5,73.3 400,80.2 402.5,77.4 405,72.5 407.5,66 410,64.2 412.5,81.9 415,81 417.5,76.6 420,74.5 422.5,69.1 425,74.8 427.5,70.3 430,68.4 432.5,80.7 435,80 437.5,77.6 440,67.1 442.5,63.9 445,76.7 447.5,78.2 450,75.4 452.5,79.3 455,74.5 457.5,73.4 460,70 462.5,65.6 465,83.9 467.5,78.4 470,60.7 472.5,72.6 475,103.1 477.5,83 480,36.1 482.5,54.6 485,97 487.5,89.1 490,73.7 492.5,68.3 495,63.1 497.5,73.9 500,79.5 502.5,80.8 505,77.9 507.5,69.3 510,71.4 512.5,72 515,66.6 517.5,76.2 520,80 522.5,82.9 525,76.6 527.5,61.1 530,69.4 532.5,74.2 535,78.5 537.5,77.8 540,73.9 542.5,77.6 545,73.3 547.5,64.9 550,72.2 552.5,78.4 555,82.7 557.5,80.7 560,67.7 562.5,70 565,72.7 567.5,71.2 570,77.4 572.5,74.5 575,80.1 577.5,78 580,63.6 582.5,67.8 585,73.7 587.5,80.2 590,82.4 592.5,71.5 595,73.9 597.5,76.2 600,69.9 602.5,65.2 605,63.4 607.5,93.9 610,105.1 612.5,60.8 615,43.9 617.5,70.5 620,85.7 622.5,83.2 625,72.3 627.5,75.4 630,79.4 632.5,66.2 635,65.6 637.5,71.4 640,81.2 642.5,83.9 645,72.4 647.5,68.7 650,72.2 652.5,71.6 655,74 657.5,72.1 660,78.8 662.5,83.8 665,69.3 667.5,65.9 670,67.7 672.5,73.4 675,85.3 677.5,76.7 680,72.2 682.5,76 685,69 687.5,69.8 690,68.6 692.5,76.1 695,87.5 697.5,75.2 700,67.4 702.5,70.2 705,78 707.5,74.8 710,50.9 712.5,75.5 715,119 717.5,83.8 720,27.6 722.5,46.4 725,95 727.5,98.4 730,73.1 732.5,67.1 735,71.5 737.5,69.3 740,73.4 742.5,71.2 745,73.4 747.5,83.1 750,78.1 752.5,71.8 755,64.6 757.5,66.2 760,82.2 762.5,77.4 765,74.6 767.5,76.2 770,71.4 772.5,72.9 775,68.4 777.5,69.2 780,83.8 782.5,80.6 785,72.9 787.5,68.9 790,65.5 792.5,77.6 795,75.1 797.5,73.3 800,80.2"></path>
+            </g>
+          </svg>
+          <span class="rs-bar-label">MATERIALITY BAR</span>
+        </div>
         <div class="rs-hd"><span class="rs-live"></span>EACH ITEM CARRIES ONE MECHANISM</div>
         <div class="rs-row" style="--i:0"><span class="rs-k">01</span><span class="rs-v">Candidate issue</span></div>
         <div class="rs-row" style="--i:1"><span class="rs-k">02</span><span class="rs-v">KRI / KPI</span></div>
@@ -625,14 +637,11 @@
 <section id="about">
   <div class="wrap about">
     <div class="about-label">ABOUT</div>
-    <div class="portrait-wrap">
-      <div class="portrait">
-        <img src="assets/portrait.webp" alt="Portrait of Patrick J. Kelly">
-      </div>
-      <div class="orbit" aria-hidden="true"></div>
+    <div class="portrait">
+      <img src="assets/portrait.webp" alt="Portrait of Patrick J. Kelly">
     </div>
     <div class="about-copy">
-      <p class="about-lede">I'm Patrick Kelly. I work on technology risk — lately, what <span class="hl" data-area="ai">frontier AI</span> and <span class="hl" data-area="pqc">the post-quantum transition</span> mean for the institutions we all depend on.</p>
+      <p class="about-lede">I'm Patrick Kelly. I work on technology risk — lately, what frontier AI and the post-quantum transition mean for the institutions we all depend on.</p>
       <p class="body">Everything here is built in the open from public information: use it, question it, improve it. If you're thinking about the same problems, I'd like to compare notes.</p>
       <div class="about-links">
         <a href="https://github.com/WowItWorked">GitHub</a>
@@ -740,6 +749,60 @@
     if (mq.addEventListener) mq.addEventListener('change', sync);
     sync();
     return { on: on, subscribe: function(f){ subs.push(f); } };
+  })();
+
+  /* Signal ticker: the latest AI items from Readiness Signal's public archive (same site).
+     The markup carries a snapshot so the band is never empty; this swaps in the current
+     items and sets the scroll speed from the list's width. */
+  (function(){
+    var track = document.querySelector('.ticker-track');
+    if (!track) return;
+    var lists = track.querySelectorAll('.ticker-list');
+    var MAX = 12, SPEED = 55;   // headlines shown; scroll speed in px per second
+    var MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    function pace(){
+      var w = lists[0] && lists[0].scrollWidth;
+      if (w) track.style.setProperty('--tk-dur', Math.round(w / SPEED) + 's');
+    }
+    // the item's own calendar date (Eastern) is the date part of its timestamp
+    function dateOf(ts){
+      var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(ts || '');
+      if (!m) return '';
+      var label = Number(m[3]) + ' ' + MONTHS[Number(m[2]) - 1];
+      return Number(m[1]) === new Date().getFullYear() ? label : label + ' ' + m[1];
+    }
+    function entry(it, copy){
+      var li = document.createElement('li'), a = document.createElement('a');
+      var d = document.createElement('span'), t = document.createElement('span');
+      li.setAttribute('data-area', 'ai');
+      a.href = '/Readiness-Signal/#' + encodeURIComponent(it.id);
+      if (copy) a.tabIndex = -1;
+      d.className = 'tk-date'; d.textContent = dateOf(it.timestamp);
+      t.className = 'tk-text'; t.textContent = it.claim;
+      a.appendChild(d); a.appendChild(t); li.appendChild(a);
+      return li;
+    }
+    pace();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(pace);
+    if (!window.fetch || lists.length < 2) return;
+    fetch('/Readiness-Signal/data/archive.json', { cache: 'no-cache' })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(data){
+        var items = (data && Array.isArray(data.items) ? data.items : []).filter(function(it){
+          return it && it.id && it.claim && Array.isArray(it.domains) && it.domains.indexOf('ai') >= 0;
+        });
+        items.sort(function(a, b){ return (Date.parse(b.timestamp) || 0) - (Date.parse(a.timestamp) || 0); });
+        items = items.slice(0, MAX);
+        var ids = items.map(function(it){ return it.id; }).join(',');
+        if (!items.length || ids === track.getAttribute('data-ids')) return;
+        for (var c = 0; c < 2; c++) {
+          lists[c].textContent = '';
+          items.forEach(function(it){ lists[c].appendChild(entry(it, c === 1)); });
+        }
+        track.setAttribute('data-ids', ids);
+        pace();
+      })
+      .catch(function(){});
   })();
 
   /* Hero signal field: a dot grid swept by a slow radar centred on the Current Focus panel.
