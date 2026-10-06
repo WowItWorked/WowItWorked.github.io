@@ -50,6 +50,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&family=Saira:wght@500&text=ACEGHIKMNRSTabfhikloprstuwy-.%20&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700&family=Urbanist:wght@400&text=%20.ARSacdefghiklmnprstuy&display=block" rel="stylesheet">
 <script>try{if(localStorage.getItem('etr-motion')==='off')document.documentElement.classList.add('motion-off')}catch(e){}</script>
 <style>
   /* Focus-area hues: categorical only (which area a project belongs to), never a rating or status.
@@ -189,7 +190,7 @@
   .featured-shot::after{content:"";position:absolute;inset:0;background:oklch(0.52 0.09 250);opacity:0;transition:opacity .15s;pointer-events:none}
   .featured-shot:hover::after{opacity:.12}
   /* Readiness Signal card: a typeset panel of the four mechanisms in place of a screenshot,
-     dressed as the product's navy masthead. Behind it runs a radio wave of chatter: bursts
+     dressed as the product's navy masthead and headed by its logo. Behind it runs a radio wave of chatter: bursts
      that cross the dashed materiality bar light up, the rest stays below it. */
   .featured-shot.rs{aspect-ratio:auto;display:flex;text-decoration:none;color:#F7F6F1;background:#0B1F44;background:linear-gradient(115deg,#0B1F44 0%,#142A5C 55%,#1E1B4B 100%);border-color:#0B1F44}
   .rs-panel{--rs-pad:clamp(22px,3.5vw,36px);position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;padding:var(--rs-pad)}
@@ -203,7 +204,16 @@
   .rs-hot{stroke:#65E287;stroke-width:1.6}
   .rs-bar{stroke:rgba(247,246,241,.38);stroke-width:1;stroke-dasharray:3 4}
   .rs-bar-label{position:absolute;right:14px;top:34px;font-size:9.5px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.5)}
-  .rs-hd{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.66);padding-bottom:12px}
+  /* The product's logo, as on its own masthead: the mark (a baseline rising through the bar, the
+     part above it in the Readiness Signal green) beside the wordmark in Source Serif 4 Bold, the
+     tagline in Urbanist under it. Both faces load only the logo's letters (the second font link),
+     so nothing else on the page may ask for them. The mark is sized in em of the wordmark. */
+  .rs-hd{display:grid;grid-template-columns:auto auto;justify-content:start;align-items:center;column-gap:.3em;row-gap:3px;padding-bottom:16px;font-size:clamp(22px,2.6vw,27px)}
+  .rs-logo{display:block;width:2.29em;height:auto;margin-top:.12em}
+  .rs-logo-base{fill:#fff}
+  .rs-logo-cap{fill:#1FD16A}
+  .rs-name{font-family:'Source Serif 4',serif;font-weight:700;line-height:1;letter-spacing:-.005em;white-space:nowrap;color:#fff}
+  .rs-tag{grid-column:2;font-family:'Urbanist',sans-serif;font-size:13.5px;line-height:1.2;color:#fff}
   .rs-row{display:flex;gap:16px;align-items:baseline;padding:12px 0;border-top:1px solid rgba(247,246,241,.14)}
   .rs-row > span{position:relative}
   .rs-row::before{content:"";position:absolute;top:0;bottom:0;left:calc(-1 * var(--rs-pad));right:calc(-1 * var(--rs-pad));background:linear-gradient(90deg,rgba(101,226,135,.18),rgba(101,226,135,0) 70%);box-shadow:inset 3px 0 0 #65E287;opacity:0}
@@ -213,7 +223,7 @@
   .rs-ft::after{content:"";display:inline-block;width:7px;height:13px;margin-left:8px;vertical-align:-2px;background:#65E287}
 
   /* Live indicator: a green dot (the Readiness Signal brand green) that pings. */
-  .tag-live::before,.card-live::before,.rs-live{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:#65E287}
+  .tag-live::before,.card-live::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:#65E287}
   .card-live::before{background:#37BB62}
   .card-live{display:inline-flex;align-items:center;gap:6px}
 
@@ -296,7 +306,7 @@
 
     /* Loops (all paused by the motion toggle) */
     .hero-band::before{animation:drift 26s ease-in-out infinite alternate}
-    .ticker-track{animation:ticker var(--tk-dur,180s) linear infinite}
+    .ticker-track{animation:ticker var(--tk-dur,225s) linear infinite}
     .ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
     .focus .i-sweep{transform-box:view-box;transform-origin:50% 50%;animation:spin 10s linear infinite}
     .focus .i-orbit{transform-box:view-box;transform-origin:50% 50%;animation:spin 24s linear infinite}
@@ -304,7 +314,7 @@
     .rs-chatter-bg{animation:chatter 13s linear infinite}
     .rs-row::before{animation:scan 9s ease-in-out infinite;animation-delay:calc(var(--i) * .55s + 1s)}
     .rs-ft::after{animation:blink 1.2s steps(1,end) infinite}
-    .tag-live::before,.card-live::before,.rs-live,.tk-live{animation:ping 2.4s ease-out infinite}
+    .tag-live::before,.card-live::before,.tk-live{animation:ping 2.4s ease-out infinite}
 
     /* On hover */
     .i-spark{transform-box:view-box;transform-origin:50% 50%}
@@ -519,7 +529,7 @@
           </svg>
           <span class="rs-bar-label">MATERIALITY BAR</span>
         </div>
-        <div class="rs-hd"><span class="rs-live"></span>EACH ITEM CARRIES ONE MECHANISM</div>
+        <div class="rs-hd"><svg class="rs-logo" viewBox="0 0 284 94" focusable="false"><path class="rs-logo-base" d="M0 68H96V44H122V94H0zM162 44H188V68H284V94H162z"></path><path class="rs-logo-cap" d="M96 0H188V44H162V26H122V44H96z"></path></svg><span class="rs-name">Readiness Signal</span><span class="rs-tag">Amplify the signal. Reduce the risk.</span></div>
         <div class="rs-row" style="--i:0"><span class="rs-k">01</span><span class="rs-v">Candidate Issue</span></div>
         <div class="rs-row" style="--i:1"><span class="rs-k">02</span><span class="rs-v">KRI / KPI</span></div>
         <div class="rs-row" style="--i:2"><span class="rs-k">03</span><span class="rs-v">Risk Area</span></div>
@@ -763,7 +773,7 @@
     var track = document.querySelector('.ticker-track');
     if (!track) return;
     var lists = track.querySelectorAll('.ticker-list');
-    var MAX = 12, SPEED = 55;   // headlines shown; scroll speed in px per second
+    var MAX = 12, SPEED = 44;   // headlines shown; scroll speed in px per second (owner: 20% slower)
     var MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
     function pace(){
       var w = lists[0] && lists[0].scrollWidth;
