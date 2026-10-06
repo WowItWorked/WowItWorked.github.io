@@ -45,10 +45,11 @@
   ]
 }
 </script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%23F7F6F1'/%3E%3Crect%20x='8'%20y='8'%20width='16'%20height='16'%20fill='%230C2340'/%3E%3C/svg%3E">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&family=Saira:wght@500&text=ACEGHIKMNRSTabfhikloprstuwy-.%20&display=block" rel="stylesheet">
 <script>try{if(localStorage.getItem('etr-motion')==='off')document.documentElement.classList.add('motion-off')}catch(e){}</script>
 <style>
   /* Focus-area hues: categorical only (which area a project belongs to), never a rating or status.
@@ -75,13 +76,16 @@
   /* ===== Nav ===== */
   .nav-band{position:relative;border-bottom:1px solid rgba(12,35,64,.25)}
   .nav-band::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:#0C2340;transform-origin:0 50%}
-  .nav{display:flex;flex-wrap:wrap;row-gap:12px;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#0C2340}
+  .nav{display:flex;flex-wrap:wrap;row-gap:12px;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+  .brand{display:flex;align-items:flex-end;gap:12px;text-decoration:none;color:#0C2340}
   .brand:hover{opacity:1}
-  /* One 10px square at rest, drawn as four 5px quarters so it can split into the area colours on hover. */
-  .brand-mark{width:5px;height:5px;margin:0 5px 5px 0;background:#0C2340;box-shadow:5px 0 0 #0C2340,0 5px 0 #0C2340,5px 5px 0 #0C2340;transition:background .3s ease,box-shadow .45s var(--ease)}
-  .brand:hover .brand-mark{background:#E4762C;box-shadow:6px 0 0 #8A66D9,0 6px 0 #37BB62,6px 6px 0 #19A4B7}
-  .brand-name{font-size:13.5px;letter-spacing:.16em;font-weight:600}
+  /* The logo: the mark (a frame around two bars, a square past its open corner), the wordmark in Saira
+     and the tagline in Lexend, both fonts loaded with only the letters the logo uses. */
+  .brand-logo{flex:none;display:block;width:40px;height:auto}
+  .brand-text{display:flex;flex-direction:column;gap:5px}
+  .brand-name{font-family:'Saira',sans-serif;font-size:19px;font-weight:500;letter-spacing:.2em;line-height:1;text-transform:uppercase}
+  .brand-tag{font-family:'Lexend',sans-serif;font-size:11.5px;line-height:1.15;color:rgba(12,35,64,.78)}
+  @media (max-width:420px){.brand-logo{width:34px}.brand-name{font-size:16px;letter-spacing:.16em}.brand-tag{font-size:10.5px}}
   .nav-links{display:flex;flex-wrap:wrap;gap:16px 32px;font-size:15px;font-weight:500;align-items:center}
   .nav-links a{text-decoration:none;color:rgba(12,35,64,.85)}
   .nav-links a:hover{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:6px;opacity:1}
@@ -274,7 +278,8 @@
   .footer-links a{color:#F7F6F1;text-decoration:none;border-bottom:1px solid rgba(247,246,241,.5);padding-bottom:3px;transition:border-color .25s ease}
   .footer-links a:hover{border-bottom-color:#65E287;opacity:1}
   .footer-bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center;border-top:1px solid rgba(247,246,241,.2);padding-top:20px}
-  .footer-domain{font-size:11.5px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.6)}
+  .footer-domain{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.14em;color:rgba(247,246,241,.6)}
+  .footer-logo{flex:none;width:20px;height:auto;color:rgba(247,246,241,.75)}
   .footer-copy{font-size:13px;color:rgba(247,246,241,.6)}
 
   /* ===== Motion ===== */
@@ -365,8 +370,8 @@
 <header class="nav-band">
   <div class="wrap nav">
     <a href="#top" class="brand">
-      <div class="brand-mark"></div>
-      <div class="brand-name">EMERGING TECH RISK</div>
+      <svg class="brand-logo" viewBox="0 0 186 180" aria-hidden="true" focusable="false"><path fill="currentColor" d="M134 0h52v52h-52zM0 28h100v18H0zM0 28h18v152H0zM0 162h152v18H0zM134 84h18v96h-18zM30 59h43v91H30zM82 110h44v40H82z"/></svg>
+      <span class="brand-text"><span class="brand-name">Emerging Tech Risk</span><span class="brand-tag">AI-built tools for risks without a playbook.</span></span>
     </a>
     <nav class="nav-links">
       <a href="#work">Projects</a>
@@ -671,7 +676,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-domain">EMERGINGTECHRISK.COM</div>
+      <div class="footer-domain"><svg class="footer-logo" viewBox="0 0 186 180" aria-hidden="true" focusable="false"><path fill="currentColor" d="M134 0h52v52h-52zM0 28h100v18H0zM0 28h18v152H0zM0 162h152v18H0zM134 84h18v96h-18zM30 59h43v91H30zM82 110h44v40H82z"/></svg>EMERGINGTECHRISK.COM</div>
       <div class="footer-copy">Built in the open · © 2026 Patrick J. Kelly</div>
     </div>
   </div>
