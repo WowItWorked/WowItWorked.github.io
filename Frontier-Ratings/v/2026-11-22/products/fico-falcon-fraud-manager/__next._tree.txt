@@ -1,0 +1,10 @@
+:HL["/Frontier-Ratings/_next/static/chunks/41kqpsahxdaxd.css","style"]
+:HL["/Frontier-Ratings/_next/static/media/07c7676b89ed2778-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Frontier-Ratings/_next/static/media/237858b39a32779d-s.p.2cyn07wtgehh0.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Frontier-Ratings/_next/static/media/53897e768d329f66-s.p.3t6q91iet4nsy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+5:[["children",{"s":"__PAGE__","h":160}]]
+4:[["children",{"s":{"n":"id","t":"d","k":"fico-falcon-fraud-manager","s":[]},"h":65632,"c":"$Q5"}]]
+3:[["children",{"s":"products","h":131168,"c":"$Q4"}]]
+2:[["children",{"s":{"n":"version","t":"d","k":"2026-11-22","s":[]},"h":196704,"c":"$Q3"}]]
+1:[["children",{"s":"v","h":131168,"c":"$Q2"}]]
+0:{"b":"Wjr1Cr44cYsWwJu6jXP5V","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
