@@ -1,0 +1,436 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Frontier Ratings: what changed",
+ "home_page_url": "https://emergingtechrisk.com/Frontier-Ratings/",
+ "feed_url": "https://emergingtechrisk.com/Frontier-Ratings/feed.json",
+ "description": "Sourced cybersecurity and AI vendor intelligence for banks",
+ "items": [
+  {
+   "id": "version-2026-11-20",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes#v-2026-11-20",
+   "title": "Dataset version 2026-11-20",
+   "content_text": "240 new vendors, 314 new products, 0 score changes, 0 vendor status changes, 1002 events recorded.",
+   "date_published": "2026-11-22T06:17:08.353Z"
+  },
+  {
+   "id": "reality-defender-evt-2026-11-microsoft-teams-partner",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#reality-defender-evt-2026-11-microsoft-teams-partner",
+   "title": "partnership: Reality Defender says Microsoft named it a synthetic media detection partner for Teams",
+   "content_text": "Reality Defender stated on 2026-11-20 that Microsoft, at its Ignite conference that week, named it one of four synthetic media detection partners for Microsoft Teams, with RealMeeting showing results to the meeting organiser inside Teams. This is the vendor's account; a Microsoft source naming the partners was not found.",
+   "date_published": "2026-11-20T00:00:00Z"
+  },
+  {
+   "id": "mind-security-evt-2026-11-email-dlp",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#mind-security-evt-2026-11-email-dlp",
+   "title": "launch: MIND adds email data loss prevention for Microsoft Exchange",
+   "content_text": "MIND announced an email module that classifies message and attachment content against the recipient and can block outbound Microsoft Exchange mail before delivery, using the same policies as its other channels.",
+   "date_published": "2026-11-19T00:00:00Z"
+  },
+  {
+   "id": "saviynt-evt-2026-11-s3ns-eu-offering",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#saviynt-evt-2026-11-s3ns-eu-offering",
+   "title": "launch: Saviynt launches EU identity security offering on S3NS trusted cloud",
+   "content_text": "Saviynt announced an EU offering delivered as SaaS on S3NS's SecNumCloud-qualified cloud, separated from its global commercial cloud and operated by EU residents, with Thales as operations partner.",
+   "date_published": "2026-11-19T00:00:00Z"
+  },
+  {
+   "id": "upguard-evt-2026-11-novacoast-managed-assessments",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#upguard-evt-2026-11-novacoast-managed-assessments",
+   "title": "acquisition: Novacoast acquires UpGuard's managed vendor assessment business",
+   "content_text": "UpGuard announced that Novacoast acquired its managed vendor assessments service business, with the delivering analysts moving to Novacoast from 2026-11-15. Customers continue to use the UpGuard platform. Terms were not disclosed.",
+   "date_published": "2026-11-19T00:00:00Z"
+  },
+  {
+   "id": "xai-evt-rep-2026-11-litigation-dockets",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#xai-evt-rep-2026-11-litigation-dockets",
+   "title": "litigation: Federal dockets show at least ten new suits naming X.AI Corp. since mid-September 2026",
+   "content_text": "According to federal dockets indexed by CourtListener (searched 2026-11-20): the ten most recent of 58 dockets naming X.AI were all filed between 2026-09-17 and 2026-11-19. They include several Doe v. X.AI Corp. cases in W.D. Ark., NAACP v. X.AI in the Fifth Circuit, Carter v. X.AI Corp. in W.D. Tenn., Mueller v. X.AI Corp. in N.D. Ill., Saylor v. X.AI Corp. in C.D. Cal. and Al-Khatahtbeh v. X.AI Corp. in N.D. Cal. The claims were not reviewed.",
+   "date_published": "2026-11-19T00:00:00Z"
+  },
+  {
+   "id": "biocatch-evt-2026-11-trust-new-zealand",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#biocatch-evt-2026-11-trust-new-zealand",
+   "title": "launch: BioCatch announces New Zealand banks will launch an intelligence-sharing network",
+   "content_text": "BioCatch's news index lists a release dated 2026-11-18 stating that New Zealand banks are to launch an intelligence-sharing network to combat fraud and scams. A release the same day reported results from BioCatch Trust Australia, which launched in November 2024 with five banks.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "h2o-ai-evt-2026-11-cfo-appointed",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#h2o-ai-evt-2026-11-cfo-appointed",
+   "title": "leadership change: H2O.ai appoints a chief financial officer",
+   "content_text": "H2O.ai announced the appointment of Steven Vattuone, previously chief financial officer of ON24, as its chief financial officer.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "holistic-ai-evt-2026-11-red-teaming-2",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#holistic-ai-evt-2026-11-red-teaming-2",
+   "title": "launch: Holistic AI releases Agentic Red Teaming 2.0",
+   "content_text": "A platform update adds agent profiling, adaptive attacks and tests for data extraction, tool abuse, bias and sycophancy, with evidence, severity and a recommended fix for each finding.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "horizon3-ai-evt-2026-11-il4-authorization",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#horizon3-ai-evt-2026-11-il4-authorization",
+   "title": "certification: Horizon3 announces Impact Level 4 authorisation for NodeZero for Defense",
+   "content_text": "Horizon3 announced that NodeZero for Defense, covering internal pentesting with risk-based exposure management, is included in an Impact Level 4 authorisation and is available to US defence customers. The release does not name the authorising body.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "mind-security-evt-2026-11-microsoft-365-integrations",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#mind-security-evt-2026-11-microsoft-365-integrations",
+   "title": "launch: MIND makes Microsoft 365 and Copilot integrations generally available",
+   "content_text": "MIND announced generally available integrations with Microsoft Copilot, Purview, Teams, SharePoint, OneDrive, Edge and Exchange, including reading and applying Purview sensitivity labels and a Windows endpoint agent, and said the product can be bought through the Microsoft Marketplace.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "nice-evt-2026-11-microsoft-cognigy-integration",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#nice-evt-2026-11-microsoft-cognigy-integration",
+   "title": "partnership: NICE announces NiCE Cognigy integrations with Microsoft Teams, Azure and Dynamics 365",
+   "content_text": "NICE announced that NiCE Cognigy had completed certification as a voice agent for Microsoft Teams Phone, able to answer calls and transfer callers with context, and a new integration with Azure, Teams and Dynamics 365 Customer Service. The offerings were stated to be available on Microsoft Marketplace.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "pentera-evt-2026-11-pentera-apps-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#pentera-evt-2026-11-pentera-apps-launch",
+   "title": "launch: Pentera Apps announced for web application and API testing",
+   "content_text": "Pentera announced Pentera Apps, agent-based testing of web applications and APIs, in early availability after a beta with more than 60 customers. A July 2026 release had put general availability in the fourth quarter of 2026.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "pindrop-evt-2026-11-hiring-and-teams-certification",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#pindrop-evt-2026-11-hiring-and-teams-certification",
+   "title": "launch: Pindrop launches Pindrop for Hiring; Pulse for Meetings certified for Microsoft Teams",
+   "content_text": "Pindrop announced on 2026-11-18 a new product, Pindrop for Hiring, and said its Pulse for Meetings integration had earned Microsoft Teams certification, with in-meeting warnings and detection events that can flow into Microsoft Defender workflows.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "tonic-ai-evt-2026-11-spirit-airlines-deidentification",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#tonic-ai-evt-2026-11-spirit-airlines-deidentification",
+   "title": "partnership: Tonic.ai approved to de-identify Spirit Airlines dataset being sold to Google",
+   "content_text": "Tonic.ai announced that the US Bankruptcy Court for the Southern District of New York approved its contract to act as independent third party de-identifying a corporate dataset that Google is buying from Spirit Airlines in bankruptcy proceedings.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "ent-evt-2026-11-microsoft-pegasus",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#ent-evt-2026-11-microsoft-pegasus",
+   "title": "partnership: Ent joins Microsoft for Startups Pegasus Program and lists on Microsoft Marketplace",
+   "content_text": "Ent said it had joined the Microsoft for Startups Pegasus Program, was available on Microsoft Marketplace, and had integrations with Microsoft Defender XDR, Sentinel, Purview, Entra ID, Intune and Security Copilot.",
+   "date_published": "2026-11-17T00:00:00Z"
+  },
+  {
+   "id": "fireworks-ai-evt-rep-2026-11-civil-suits",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fireworks-ai-evt-rep-2026-11-civil-suits",
+   "title": "litigation: Two civil suits filed against Fireworks AI in the Northern District of California",
+   "content_text": "According to the CourtListener federal docket index, searched on 2026-11-20, Komorski v. Fireworks AI, Inc. (3:26-cv-13987) was filed on 17 November 2026 and Brethelette v. Fireworks.AI, Inc. (3:26-cv-14080) on 18 November 2026, both in the Northern District of California. The complaints were not retrieved, so what the suits allege is not established.",
+   "date_published": "2026-11-17T00:00:00Z"
+  },
+  {
+   "id": "genesys-evt-2026-11-standalone-ai-agents",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#genesys-evt-2026-11-standalone-ai-agents",
+   "title": "launch: Genesys launches Standalone AI Agents and Genesys Arena",
+   "content_text": "Genesys announced Standalone AI Agents, which let an organisation deploy the Genesys Cloud Agentic Virtual Agent without moving its contact centre to Genesys Cloud, together with Genesys Arena, a set of prebuilt agent kits, and an effort-based pricing model.",
+   "date_published": "2026-11-17T00:00:00Z"
+  },
+  {
+   "id": "microsoft-evt-2026-11-mai-ignite-models",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#microsoft-evt-2026-11-mai-ignite-models",
+   "title": "launch: Microsoft AI announces MAI Code 2, MAI Image 2.7, MAI Cyber 2 Flash and other models at Ignite",
+   "content_text": "Microsoft AI announced on 2026-11-17 a set of new in-house models: MAI Code 2 and Code 2 Flash, MAI Image 2.7 and 2.7 Flash, MAI Cyber 2 Flash, MAI Realtime 1, a transcription model built on MAI Transcribe 2 and Decision 1.1. It also described MAI Licensed Weights, under which a customer customises an MAI model with its own data and runs it in its own Azure environment, initially through Microsoft's own engagement teams. Availability differs by model; MAI Code 2 Flash was described as a limited-access preview in Foundry.",
+   "date_published": "2026-11-17T00:00:00Z"
+  },
+  {
+   "id": "marvell-evt-2026-11-fips-140-3-pqc",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#marvell-evt-2026-11-fips-140-3-pqc",
+   "title": "certification: LS2 HSM module validated to FIPS 140-3 Level 3 with ML-KEM and ML-DSA",
+   "content_text": "The NIST register shows certificate #5588 for the LS2 HSM Family module, validated on 2026-11-16 at FIPS 140-3 overall Level 3, with the post-quantum algorithms ML-KEM and ML-DSA among its approved algorithms. The certificate runs to 2031-11-15.",
+   "date_published": "2026-11-16T00:00:00Z"
+  },
+  {
+   "id": "alibaba-cloud-evt-rep-2026-11-anaconda-suit",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#alibaba-cloud-evt-rep-2026-11-anaconda-suit",
+   "title": "litigation: Anaconda files copyright case naming Alibaba Group and Alibaba Cloud in Delaware federal court",
+   "content_text": "According to the federal docket index published by CourtListener, Anaconda, Inc. filed a copyright case against Alibaba Group Holding Limited in the US District Court for the District of Delaware on 2026-11-13 (No. 1:26-cv-01466), with Alibaba Cloud listed among the parties. The claims and any response were not reviewed.",
+   "date_published": "2026-11-13T00:00:00Z"
+  },
+  {
+   "id": "langchain-evt-2026-11-series-c",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#langchain-evt-2026-11-series-c",
+   "title": "funding: LangChain announces US$300 million Series C at US$3 billion valuation",
+   "content_text": "LangChain announced on 2026-11-13 a US$300 million Series C at a US$3 billion valuation led by existing investor CapitalG, with new investors including GIC and DFJ Growth. It said more than 7,000 organisations use LangSmith.",
+   "date_published": "2026-11-13T00:00:00Z"
+  },
+  {
+   "id": "cognigy-evt-2026-11-next-generation-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cognigy-evt-2026-11-next-generation-launch",
+   "title": "launch: NICE launches a next generation of NiCE Cognigy with reusable skills and decision tracing",
+   "content_text": "NICE announced a new generation of NiCE Cognigy with a redesigned builder, agents assembled from reusable skills, tools and personas, an AI assistant for building and testing, tracing of each step an agent takes, and native speech-to-speech models. Existing deployments continue unchanged; default models are included in the conversation price and premium third-party models are billed on usage.",
+   "date_published": "2026-11-12T00:00:00Z"
+  },
+  {
+   "id": "microsoft-evt-2026-11-microsoft-365-outage",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#microsoft-evt-2026-11-microsoft-365-outage",
+   "title": "outage: Worldwide Microsoft 365 outage lasts nearly 24 hours; Copilot among services affected",
+   "content_text": "Reported by BleepingComputer on 2026-11-16 and by ITPro: an outage that began on 12 November 2026 disrupted Microsoft 365 services worldwide for nearly 24 hours, including Outlook, Exchange Online, Teams and Copilot. Both reported Microsoft's preliminary account that a latent software defect, extra load after a Teams failover and reduced server capacity caused a cascading failure that left more than 80% of its networking gateway servers unresponsive. A final post-incident report had not been published when this was recorded.",
+   "date_published": "2026-11-12T00:00:00Z"
+  },
+  {
+   "id": "nvidia-evt-2026-11-ceo-resignation",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#nvidia-evt-2026-11-ceo-resignation",
+   "title": "leadership change: NVIDIA chief executive Jensen Huang resigns; CFO Colette Kress named interim CEO",
+   "content_text": "NVIDIA announced that Jensen Huang resigned as president, chief executive and director with immediate effect, without stating a reason. Colette Kress became interim chief executive while remaining chief financial officer, and Harvey C. Jones was appointed board chair.",
+   "date_published": "2026-11-12T00:00:00Z"
+  },
+  {
+   "id": "picus-security-evt-2026-11-autonomous-pentesting-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#picus-security-evt-2026-11-autonomous-pentesting-launch",
+   "title": "launch: Picus Security launches agentic Autonomous Penetration Testing with scope approval and a kill switch",
+   "content_text": "Picus Security announced on 12 November 2026 that Picus Autonomous Penetration Testing was available to customers as part of its platform, with the fully agentic mode in early access. The company described business approval of scope and techniques before a run, hard-deny rules against destructive actions, a kill switch, three autonomy levels and logging of every action. No customer was named.",
+   "date_published": "2026-11-12T00:00:00Z"
+  },
+  {
+   "id": "black-duck-evt-2026-11-fedramp-marketplace",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#black-duck-evt-2026-11-fedramp-marketplace",
+   "title": "certification: Polaris listed on FedRAMP Marketplace as in process; not yet authorised",
+   "content_text": "Black Duck announced that the Polaris Platform is listed on the FedRAMP Marketplace in the initial implementation phase and that it is pursuing FedRAMP 20x Class C certification with an assessment against the Rev5 Moderate baseline. The product is not yet authorised.",
+   "date_published": "2026-11-11T00:00:00Z"
+  },
+  {
+   "id": "fortanix-evt-2026-11-rafay-partnership",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fortanix-evt-2026-11-rafay-partnership",
+   "title": "partnership: Rafay and Fortanix announce joint confidential AI as a service offering",
+   "content_text": "Rafay Systems and Fortanix announced that the Rafay platform orchestrates workloads on CNCF Confidential Containers using Fortanix Confidential AI. In the joint design Data Security Manager releases encryption keys only to environments attested by Fortanix Confidential Computing Manager.",
+   "date_published": "2026-11-11T00:00:00Z"
+  },
+  {
+   "id": "varonis-evt-2026-11-atlas-gateways",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#varonis-evt-2026-11-atlas-gateways",
+   "title": "launch: Varonis adds LLM Gateway and MCP Gateway to Atlas AI Security",
+   "content_text": "The Varonis changelog records the release of an LLM Gateway for controlling AI model usage and spend and an MCP Gateway for governing agent tool access, both within Atlas AI Security, followed on 12 November by an Agent Manifest feature.",
+   "date_published": "2026-11-11T00:00:00Z"
+  },
+  {
+   "id": "cogent-security-evt-2026-11-specular-acquisition",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cogent-security-evt-2026-11-specular-acquisition",
+   "title": "acquisition: Cogent agrees to acquire Specular",
+   "content_text": "Pulse 2.0 reported on 2026-11-11 that Cogent had announced an agreement to acquire Specular, a company whose AI agents probe an organisation from the internet to find exposed assets and test how they could be exploited. Terms were not disclosed. Specular's founder is to lead offensive security at Cogent, and the external testing is to be combined with Cogent's remediation tools. Cogent's newsroom dates the announcement 2026-11-10.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "cyera-evt-2026-11-cy-agents-endpoint",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cyera-evt-2026-11-cy-agents-endpoint",
+   "title": "launch: Cyera announces Cy Agents and Cyera Endpoint",
+   "content_text": "At its datasecAI 2026 event Cyera announced Cy Agents, a set of AI agents for detection, triage and investigation, and Cyera Endpoint, an on-device sensor that extends data loss prevention to laptops and workstations. The release does not say whether either is generally available.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "feedzai-evt-2026-11-cro-appointment",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#feedzai-evt-2026-11-cro-appointment",
+   "title": "leadership change: Feedzai appoints Joost van Mook as chief revenue officer",
+   "content_text": "Feedzai's press-release index lists a release dated 2026-11-10 announcing Joost van Mook as chief revenue officer; the leadership page shows him in that role.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "illumio-evt-2026-11-wwt-armor",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#illumio-evt-2026-11-wwt-armor",
+   "title": "partnership: Illumio joins World Wide Technology's ARMOR framework for AI risk",
+   "content_text": "Illumio announced on 2026-11-10 that it will be featured in World Wide Technology's AI Readiness Model for Operational Resilience (ARMOR), naming Illumio Insights and Illumio Segmentation.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "one-identity-evt-2026-11-safeguard-9",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#one-identity-evt-2026-11-safeguard-9",
+   "title": "launch: One Identity releases Safeguard 9.0",
+   "content_text": "One Identity announced Safeguard 9.0 on 2026-11-10, comprising Safeguard for Privileged Passwords 9.0 and Safeguard for Privileged Sessions 9.0. The release moves to hardware-agnostic deployment, adds just-in-time group elevation scoped to an asset, ESXi account discovery and TLS 1.3 support.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "orca-security-evt-2026-11-shadow-ai-agents-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#orca-security-evt-2026-11-shadow-ai-agents-launch",
+   "title": "launch: Orca adds discovery of shadow AI applications and AI agents to its platform",
+   "content_text": "Orca announced platform additions that detect applications built with AI app builders, inventory cloud-managed and self-hosted AI agents with their models, tools, identities and reachable data, and attribute code to the agents that produced it.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "quantum-xchange-evt-2026-11-eucc-certification",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#quantum-xchange-evt-2026-11-eucc-certification",
+   "title": "certification: Phio TX receives EUCC certificate at assurance level substantial",
+   "content_text": "ENISA's register shows an EUCC certificate (EUCC-3095-2026-000003-I-00) issued on 2026-11-10 by DEKRA Testing and Certification for Quantum Xchange's PhioTX-V version 4.5.6 at assurance level substantial (EAL2), valid to 2031-11-09. The company announced it on 2026-11-12.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "cisco-evt-2026-11-claude-mythos-red-teaming",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cisco-evt-2026-11-claude-mythos-red-teaming",
+   "title": "partnership: Cisco says it will add Anthropic's Claude Mythos to AI Defense adaptive red teaming",
+   "content_text": "In a release dated 2026-11-09 Cisco said it is adding Anthropic's Claude Mythos model to the adaptive red-teaming framework in AI Defense, restricted to registered targets and authenticated operators, and described it as coming soon for select enterprises. The same release said AI Defense has been used by hundreds of customers since its January 2025 launch; no customers were named.",
+   "date_published": "2026-11-09T00:00:00Z"
+  },
+  {
+   "id": "fireworks-ai-evt-2026-11-security-incident-cloud-provider",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fireworks-ai-evt-2026-11-security-incident-cloud-provider",
+   "title": "security incident: Fireworks AI discloses a second intrusion that reached account and billing information",
+   "content_text": "Fireworks AI disclosed in bulletins of 2026-11-09 and 2026-11-17 a second, separate incident between 23 and 30 October 2026. It said an intruder entered through development machines at a third-party cloud provider that had itself been breached and reached part of production, accessing account and billing information for all accounts created before 30 October and datasets, models or secrets for a small number of customers. It said it does not store card numbers and that the investigation was still open. UiPath, which uses Fireworks AI as a sub-processor, said on its trust centre that it found no indication its customers' data was affected and rotated keys as a precaution.",
+   "date_published": "2026-11-09T00:00:00Z"
+  },
+  {
+   "id": "teleport-evt-2026-11-notion-subprocessor-breach",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#teleport-evt-2026-11-notion-subprocessor-breach",
+   "title": "security incident: Teleport discloses exposure of internal chat transcripts through sub-processor Notion",
+   "content_text": "Disclosed by Teleport on 2026-11-11: its sub-processor Notion told it on 9 November 2026 of a data breach affecting Teleport's chat transcripts in the Notion AI app. Teleport said the breach did not occur through its own systems or involve its products, that the transcripts contained links to internal pages and one office guest Wi-Fi password, which it rotated, and no credentials or specific customer data. It notified customers mentioned in the transcripts on 10 November, disabled Notion's AI features and rated the risk to customers as low.",
+   "date_published": "2026-11-09T00:00:00Z"
+  },
+  {
+   "id": "sophos-evt-rep-2026-11-litigation-dockets",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#sophos-evt-rep-2026-11-litigation-dockets",
+   "title": "litigation: Federal dockets show patent and copyright suits filed against Sophos in 2025-2026",
+   "content_text": "According to federal dockets indexed by CourtListener (searched 2026-11-20): suits filed against Sophos entities include Long Horizon Technologies LLC v. Sophos Limited (E.D. Tex., filed 2026-11-08), Arc Link LLC v. Sophos Limited (patent, E.D. Tex., filed 2026-06-18), Fast Corporation Ltd. v. Sophos Ltd. (copyright, S.D.N.Y., filed 2026-03-25) and Sulaco Enterprises LLC v. Sophos Limited (patent, E.D. Tex., filed 2025-12-16). The claims were not reviewed.",
+   "date_published": "2026-11-08T00:00:00Z"
+  },
+  {
+   "id": "checkmarx-evt-2026-11-ciso-appointment",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#checkmarx-evt-2026-11-ciso-appointment",
+   "title": "leadership change: Checkmarx appoints Kobi Sivilya as chief information security officer",
+   "content_text": "Checkmarx announced on 2026-11-05 the appointment of Kobi Sivilya to oversee security, IT and business applications. The release quotes chief executive Sandeep Johri.",
+   "date_published": "2026-11-05T00:00:00Z"
+  },
+  {
+   "id": "cyberhaven-evt-2026-11-agentic-data-security",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cyberhaven-evt-2026-11-agentic-data-security",
+   "title": "launch: Cyberhaven puts Agentic Data Security module on sale",
+   "content_text": "Cyberhaven announced that Agentic Data Security, a Flow module that finds AI agents, records their prompts, tool calls and file reads, and applies data policies to their actions, was available for purchase.",
+   "date_published": "2026-11-05T00:00:00Z"
+  },
+  {
+   "id": "futurex-evt-2026-11-veeam-ready",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#futurex-evt-2026-11-veeam-ready",
+   "title": "certification: CryptoHub receives Veeam Ready Security qualification for key management",
+   "content_text": "Futurex announced that CryptoHub was qualified under Veeam's key management system compatibility category for Veeam Backup & Replication, integrating through KMIP.",
+   "date_published": "2026-11-05T00:00:00Z"
+  },
+  {
+   "id": "sierra-evt-2026-11-anon-acquisition",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#sierra-evt-2026-11-anon-acquisition",
+   "title": "acquisition: Sierra acquires browser-agent infrastructure company Anon",
+   "content_text": "Sierra announced that Anon, which built infrastructure for AI agents to sign in to and operate websites that have no API, is joining Sierra. Terms were not disclosed. Sierra said the technology will let its agents work in systems without APIs.",
+   "date_published": "2026-11-05T00:00:00Z"
+  },
+  {
+   "id": "sumsub-evt-2026-11-jelou-partnership",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#sumsub-evt-2026-11-jelou-partnership",
+   "title": "partnership: Sumsub and Jelou announce an identity verification partnership",
+   "content_text": "Sumsub's newsroom lists a 5 November 2026 announcement of a partnership with Jelou to connect identity verification with financial-services journeys started in WhatsApp.",
+   "date_published": "2026-11-05T00:00:00Z"
+  },
+  {
+   "id": "veriff-evt-2026-11-presence-verification",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#veriff-evt-2026-11-presence-verification",
+   "title": "launch: Veriff introduces Presence Verification for deepfake and coercion detection",
+   "content_text": "Veriff announced Presence Verification, which it describes as combining deepfake and injection detection, coercion detection and device and network signals into one automated decision.",
+   "date_published": "2026-11-05T00:00:00Z"
+  },
+  {
+   "id": "nice-evt-2026-11-workforce-reduction",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#nice-evt-2026-11-workforce-reduction",
+   "title": "layoff: NICE says it will cut about 5% of its global workforce",
+   "content_text": "Announced by NICE in its third-quarter 2026 results on 2026-11-04: it expects to reduce its global workforce by approximately 5%, with pre-tax restructuring charges of roughly $15 to $20 million, mostly in the fourth quarter. Reported by The Jerusalem Post and HR Katha on the same day as about 500 of roughly 10,000 employees, linked to the effect of AI on the customer-service software market.",
+   "date_published": "2026-11-04T00:00:00Z"
+  },
+  {
+   "id": "sentra-evt-2026-11-series-c",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#sentra-evt-2026-11-series-c",
+   "title": "funding: Sentra raises US$150M led by Capital One Ventures",
+   "content_text": "Sentra announced a US$150 million investment led by Capital One Ventures, which is to take a board seat, with existing investors Bessemer Venture Partners, Zeev Ventures, Standard Investments, Munich Re Ventures and Key1 Capital taking part. SecurityWeek describes the round as a Series C that takes total funding above US$260 million.",
+   "date_published": "2026-11-04T00:00:00Z"
+  },
+  {
+   "id": "sysdig-evt-2026-11-ai-defense-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#sysdig-evt-2026-11-ai-defense-launch",
+   "title": "launch: Sysdig launches Sysdig AI Defense for runtime security of AI agents",
+   "content_text": "Sysdig's newsroom lists a press release dated 2026-11-04 announcing Sysdig AI Defense, a separate offering that applies runtime security to actions taken by AI agents.",
+   "date_published": "2026-11-04T00:00:00Z"
+  },
+  {
+   "id": "fiddler-ai-evt-2026-11-crowdstrike-agreement",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fiddler-ai-evt-2026-11-crowdstrike-agreement",
+   "title": "acquisition: CrowdStrike signs definitive agreement to acquire Fiddler AI; deal not yet closed",
+   "content_text": "CrowdStrike announced on 2026-11-03 that it had signed a definitive agreement to acquire Fiddler AI. CrowdStrike said Fiddler will be sold as part of its Falcon platform under the name Falcon Observe, that the price is to be paid predominantly in cash with a portion in stock subject to vesting, and that closing is expected in its fourth quarter of fiscal 2027 subject to customary conditions. Financial terms were not disclosed. No completion announcement was found as of 2026-11-20, so Fiddler is recorded as still independent. CrowdStrike is not yet a tracked vendor in this dataset.",
+   "date_published": "2026-11-03T00:00:00Z"
+  },
+  {
+   "id": "noma-security-evt-2026-11-red-teaming-next-generation",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#noma-security-evt-2026-11-red-teaming-next-generation",
+   "title": "launch: Noma announces next generation of its AI red-teaming engine",
+   "content_text": "In a blog post dated 2026-11-02 Noma described a new version of its red-teaming engine with chained attack techniques, custom goals written in plain language, a check on what agents actually do, presets for use in CI/CD, and results mapped to the OWASP Top 10 for LLM Applications, the OWASP Top 10 for Agentic Applications and MITRE ATLAS. No availability date was given.",
+   "date_published": "2026-11-02T00:00:00Z"
+  },
+  {
+   "id": "anysphere-evt-2026-10-marketplace-fireworks-incident",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#anysphere-evt-2026-10-marketplace-fireworks-incident",
+   "title": "security incident: Cursor discloses data exposure via a provider key and tampered marketplace extension",
+   "content_text": "Disclosed by Cursor on 2026-10-29 and updated on 2026-11-13: an attacker used an access key Cursor had issued to inference provider Fireworks to copy a storage bucket holding mostly 2025 coding-agent traces from sessions without Privacy Mode, some containing credentials. Cursor stated that those credentials gave access to internal tools and that tampered builds of the Claude Code extension (2.1.312 and 2.1.313) were served from its extension marketplace cache for about 11 hours on 2026-10-29 to at most 5,000 users. Cursor stated that agent traces were exposed for fewer than 0.05% of users, API credentials for fewer than 0.01% of customers, that customer code repositories and Privacy Mode data were not affected, and that it moved inference off Fireworks, rotated credentials and rebuilt the marketplace.",
+   "date_published": "2026-10-29T00:00:00Z"
+  },
+  {
+   "id": "cohere-evt-2026-10-series-e-initial-close",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cohere-evt-2026-10-series-e-initial-close",
+   "title": "funding: Cohere completes initial close of Series E at a CAD 35.7 billion valuation",
+   "content_text": "Light Reading reported on 2026-10-29 that Cohere had completed the initial close of a Series E round targeting up to CAD 7 billion at a valuation of CAD 35.7 billion, led by Schwarz Group, with Bell Ventures, Bullhound Capital and the Government of Canada as new investors and Inovia Capital, NVIDIA and Prosperity7 Ventures returning. The amount raised at the initial close was not given. The report said annual recurring revenue had grown 165% year on year at the end of the third quarter of 2026 and the company had 300 customers.",
+   "date_published": "2026-10-29T00:00:00Z"
+  },
+  {
+   "id": "upwind-evt-2026-10-series-c",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#upwind-evt-2026-10-series-c",
+   "title": "funding: Upwind raises US$400M Series C at a reported US$3.8B valuation",
+   "content_text": "Upwind announced a US$400M Series C led by Bessemer Venture Partners with Canapi Ventures, TCV, Greylock and Salesforce Ventures among participants, bringing total funding to more than US$800M. SecurityWeek reported a US$3.8B valuation.",
+   "date_published": "2026-10-28T00:00:00Z"
+  },
+  {
+   "id": "zilliz-evt-2026-10-milvus-authorization-advisories",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#zilliz-evt-2026-10-milvus-authorization-advisories",
+   "title": "vulnerability disclosure: Milvus project publishes six advisories on missing authentication and authorization checks",
+   "content_text": "The Milvus project's advisory list showed six advisories published on 2026-10-28, two rated high and four rated moderate, the latter covering access-control checks on telemetry, import-job, collection-description and statistics interfaces. The two high advisories were read: GHSA-gg6q-4562-83ww states that legacy REST routes on the metrics port authenticated callers but skipped role checks (versions 2.6.10 to before 2.6.25 and 3.0.0 to before 3.0.3; fixed in 2.6.25 and 3.0.3), and GHSA-hr46-v5qw-wr2q states that two streaming gRPC methods on the proxy could be reached without credentials (versions 2.6.2 to 2.6.22 and 3.0.0; fixed in 2.6.23 and 3.0.1). Neither cites observed attacks or mentions Zilliz Cloud. A further moderate advisory published on 2026-09-27 stated that import could bypass collection-level access control. The four moderate advisories of 2026-10-28 were read from the list only.",
+   "date_published": "2026-10-28T00:00:00Z"
+  },
+  {
+   "id": "ibm-evt-2026-10-quantum-safe-suite-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#ibm-evt-2026-10-quantum-safe-suite-launch",
+   "title": "launch: IBM launches IBM Quantum Safe suite for post-quantum migration",
+   "content_text": "IBM announced IBM Quantum Safe on 27 October 2026 according to an analyst commentary published the next day; Quantum Computing Report says it was released commercially at IBM's TechXchange conference. The suite groups Quantum Safe Cryptography Manager, Quantum Safe Explorer and Quantum Safe Proxy and builds on Guardium Cryptography Manager from 2025.",
+   "date_published": "2026-10-27T00:00:00Z"
+  },
+  {
+   "id": "infisical-evt-2026-10-series-b",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#infisical-evt-2026-10-series-b",
+   "title": "funding: Infisical raises US$40M Series B at a reported US$600M valuation",
+   "content_text": "Infisical announced a US$40 million Series B led by Elad Gil with Y Combinator and Gradient Ventures participating. SecurityWeek reported the valuation as US$600 million and total funding as nearly US$60 million, and said the money would go to product development, hiring and AI agent security.",
+   "date_published": "2026-10-27T00:00:00Z"
+  },
+  {
+   "id": "pinecone-evt-2026-10-pg-pinecone",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#pinecone-evt-2026-10-pg-pinecone",
+   "title": "launch: Pinecone releases pg_pinecone, an open-source search extension for Postgres data",
+   "content_text": "Pinecone's newsroom lists the launch of pg_pinecone on 27 October 2026, described as open-source search for Postgres data. The licence and its relationship to the managed database were not reviewed.",
+   "date_published": "2026-10-27T00:00:00Z"
+  },
+  {
+   "id": "saviynt-evt-2026-10-fedramp-high",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#saviynt-evt-2026-10-fedramp-high",
+   "title": "certification: Saviynt announces FedRAMP Class D (High) certification",
+   "content_text": "Saviynt announced FedRAMP Class D (High) certification, assessed by a third-party assessment organisation, covering identity governance and administration, privileged access management and application access governance. The vendor says it has held FedRAMP Moderate authorisation since 2019.",
+   "date_published": "2026-10-27T00:00:00Z"
+  },
+  {
+   "id": "tonic-ai-evt-2026-10-carahsoft-partnership",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#tonic-ai-evt-2026-10-carahsoft-partnership",
+   "title": "partnership: Tonic.ai and Carahsoft announce public-sector distribution partnership",
+   "content_text": "Tonic.ai announced that Carahsoft will act as its master government aggregator, making Fabricate, Structural and Textual available to US public-sector buyers through Carahsoft's contracts and resellers.",
+   "date_published": "2026-10-27T00:00:00Z"
+  },
+  {
+   "id": "alibaba-cloud-evt-2026-10-1260h-injunction",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#alibaba-cloud-evt-2026-10-1260h-injunction",
+   "title": "litigation: US court grants Alibaba a preliminary injunction limited to a lobbying restriction; designation stands",
+   "content_text": "Reported by the South China Morning Post on 29 October 2026: a judge of the US District Court for the Northern District of California granted Alibaba a preliminary injunction against a lobbying restriction tied to its Section 1260H designation, in a lawsuit Alibaba filed on 23 June 2026, and did not decide Alibaba's challenge to the designation itself, which remains in place. The Next Web reported on 5 July 2026, citing Bloomberg, that the court had earlier granted temporary relief on the same restriction.",
+   "date_published": "2026-10-26T00:00:00Z"
+  }
+ ]
+}
