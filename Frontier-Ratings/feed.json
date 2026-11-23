@@ -6,6 +6,433 @@
  "description": "Sourced cybersecurity and AI vendor intelligence for banks",
  "items": [
   {
+   "id": "version-2026-11-23",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes#v-2026-11-23",
+   "title": "Dataset version 2026-11-23",
+   "content_text": "40 new vendors, 49 new products, 0 score changes, 0 vendor status changes, 240 events recorded.",
+   "date_published": "2026-11-23T00:32:17.206Z"
+  },
+  {
+   "id": "concentric-ai-evt-2026-11-semantic-dlp-agent",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#concentric-ai-evt-2026-11-semantic-dlp-agent",
+   "title": "launch: Concentric AI announces an endpoint agent for Semantic DLP",
+   "content_text": "Concentric AI announced the Semantic DLP Agent, extending its controls from the browser to desktop AI applications, coding agents and locally run models, with analysis of whether a prompt fits the user's role.",
+   "date_published": "2026-11-20T00:00:00Z"
+  },
+  {
+   "id": "getreal-security-evt-2026-11-teams-marketplace",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#getreal-security-evt-2026-11-teams-marketplace",
+   "title": "launch: GetReal Protect for Microsoft Teams listed in Microsoft Marketplace",
+   "content_text": "GetReal Security said on 2026-11-19 that its Microsoft Teams integration is available in Microsoft Marketplace and that it is taking part in Microsoft's programme for certified third-party synthetic audio and video detection in Teams, with certification in progress.",
+   "date_published": "2026-11-19T00:00:00Z"
+  },
+  {
+   "id": "gitguardian-evt-2026-11-nginx2root-embedded-cluster",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#gitguardian-evt-2026-11-nginx2root-embedded-cluster",
+   "title": "vulnerability disclosure: GitGuardian patches self-hosted Embedded Cluster installs against nginx HTTP/2 flaws",
+   "content_text": "GitGuardian announced in a customer notice dated 2026-11-19 that Embedded Cluster installations of its self-hosted edition on releases 2025.1.0 to 2026.11.0 were exposed to two nginx HTTP/2 vulnerabilities, CVE-2026-123007 and CVE-2026-123633, reachable on port 443, and that release 2026.11.1 turns HTTP/2 off in the bundled ingress. Helm and KOTS installations on an existing cluster and the hosted service were not listed as affected. The notice does not say whether the flaws were exploited.",
+   "date_published": "2026-11-19T00:00:00Z"
+  },
+  {
+   "id": "immersive-evt-2026-11-ai-security-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#immersive-evt-2026-11-ai-security-launch",
+   "title": "launch: Immersive announces Immersive AI Security in early access",
+   "content_text": "On 18 November 2026 the company announced a new product family, Immersive AI Security, with two products: AI Govern & Control, which monitors and controls how staff use AI tools in the browser, and AI Observe & Assess, an on-premises appliance that maps and tests internally built AI agents. Both link findings to training in Immersive One. They are in an early-access programme, with general availability planned for early 2027.",
+   "date_published": "2026-11-18T00:00:00Z"
+  },
+  {
+   "id": "infoblox-evt-2026-11-third-party-breach",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#infoblox-evt-2026-11-third-party-breach",
+   "title": "security incident: Infoblox investigates data exposure through a compromised third-party vendor",
+   "content_text": "Reported by The Register on 2026-11-16 and by Cyber Daily on 2026-11-17: Infoblox said it was investigating unauthorised access to certain company information through a compromised third-party data migration vendor. The Register, citing sources and an email from the chief executive, reported that the intruders used the vendor's access to Infoblox's SharePoint and that the data included personal and payroll details of employees and their dependants and saved configuration snapshots of some customers' NIOS deployments. A company spokesperson told both outlets there was no indication that Infoblox products, cloud services, software updates or build-and-release processes were involved. Infoblox did not say how many customers or employees were affected.",
+   "date_published": "2026-11-16T00:00:00Z"
+  },
+  {
+   "id": "pki-solutions-evt-2026-11-utimaco-hsm-monitoring",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#pki-solutions-evt-2026-11-utimaco-hsm-monitoring",
+   "title": "launch: PKI Spotlight adds monitoring of Utimaco u.trust general purpose HSMs",
+   "content_text": "PKI Solutions announced monitoring of Utimaco u.trust GP HSMs in PKI Spotlight, including the state of each container HSM and events on configuration changes, collected without HSM login credentials. Utimaco lists PKI Solutions as a technology partner.",
+   "date_published": "2026-11-16T00:00:00Z"
+  },
+  {
+   "id": "flashpoint-evt-2026-11-agentic-ai",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#flashpoint-evt-2026-11-agentic-ai",
+   "title": "launch: Flashpoint announces an agentic AI offering for Ignite, due in early 2027",
+   "content_text": "Flashpoint announced on 10 November 2026 an offering called Flashpoint Agentic AI: a hub in Ignite combining chat-driven investigations with agents for intelligence briefings, alert set-up, alert triage and drafting intelligence requirements. The company said it would be available in early 2027 as a separate offering from the AI features already included with product licences.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "guardsquare-evt-2026-11-runway-bugfender-acquisitions",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#guardsquare-evt-2026-11-runway-bugfender-acquisitions",
+   "title": "acquisition: Guardsquare announces acquisitions of Runway and Bugfender",
+   "content_text": "Guardsquare announced that it had acquired Runway, a mobile release management platform, and Bugfender, a remote logging and crash-reporting provider, adding release management and crash analytics to its mobile security products. Terms were not disclosed.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "onespan-evt-2026-11-tsubasa-alliance",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#onespan-evt-2026-11-tsubasa-alliance",
+   "title": "partnership: OneSpan FIDO technology selected for Japan's TSUBASA Alliance shared authentication",
+   "content_text": "OneSpan announced that its FIDO authentication technology was selected for an initiative in which participating banks of Japan's TSUBASA Alliance, a ten-member grouping of regional banks, will set up shared authentication infrastructure for their mobile personal banking apps. The participating banks were not named and no launch date was given.",
+   "date_published": "2026-11-10T00:00:00Z"
+  },
+  {
+   "id": "doppel-evt-2026-11-proprise-acquisition",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#doppel-evt-2026-11-proprise-acquisition",
+   "title": "acquisition: Doppel acquires PropRise and adds its founders to its engineering team",
+   "content_text": "Doppel announced on 4 November 2026 that it had acquired PropRise, a Y Combinator-backed company founded in 2023, and that its two founders would join Doppel's engineering organisation. Pulse 2.0 reported the deal on 7 November 2026. No price was given.",
+   "date_published": "2026-11-04T00:00:00Z"
+  },
+  {
+   "id": "absolute-security-evt-2026-11-linux-support",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#absolute-security-evt-2026-11-linux-support",
+   "title": "launch: Absolute Secure Endpoint adds Linux support",
+   "content_text": "Absolute Security announced that the Secure Endpoint agent supports Ubuntu and Red Hat Enterprise Linux workstations, with inventory and device freeze available at once and patching and automation in selected editions. The release also announced self-hosted Secure Access deployments for US federal and state organisations.",
+   "date_published": "2026-11-03T00:00:00Z"
+  },
+  {
+   "id": "black-kite-evt-2026-11-crowdstrike-siem-integration",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#black-kite-evt-2026-11-crowdstrike-siem-integration",
+   "title": "partnership: Black Kite announces integration with CrowdStrike Falcon Next-Gen SIEM",
+   "content_text": "Black Kite announced an integration that delivers its third-party vendor risk intelligence into CrowdStrike Falcon Next-Gen SIEM for use in security operations workflows.",
+   "date_published": "2026-11-02T00:00:00Z"
+  },
+  {
+   "id": "fastly-evt-2026-10-go-to-market-president-retirement",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fastly-evt-2026-10-go-to-market-president-retirement",
+   "title": "leadership change: Fastly's president, go to market, Scott Lovett to retire in 2027",
+   "content_text": "Fastly reported in a Form 8-K filed on 4 November 2026 that Scott Lovett notified the company on 30 October 2026 of his planned retirement as president, go to market, on a date to be set during 2027. He stays in the role while a new chief revenue officer is recruited and will then act as a senior adviser until at least 30 June 2027.",
+   "date_published": "2026-10-30T00:00:00Z"
+  },
+  {
+   "id": "appviewx-evt-2026-10-quantum-trust-hub-standalone",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#appviewx-evt-2026-10-quantum-trust-hub-standalone",
+   "title": "launch: AppViewX offers Quantum Trust Hub as a standalone product and adds Qualys discovery",
+   "content_text": "AppViewX announced that Quantum Trust Hub is available as a standalone solution, with discovery from existing Qualys scan data alongside Tenable, upload of third-party bills of materials, business-context risk ranking and ServiceNow remediation tickets.",
+   "date_published": "2026-10-29T00:00:00Z"
+  },
+  {
+   "id": "fable-security-evt-2026-10-vishing-simulations",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fable-security-evt-2026-10-vishing-simulations",
+   "title": "launch: Fable Security makes AI voice-phishing simulations generally available",
+   "content_text": "Fable Security announced on 29 October 2026 the general availability of voice-phishing simulations: AI voice calls to employees and shared lines using pretexts such as password and MFA resets, vendor payment changes and executive impersonation, with coaching after the call and results fed into each person's risk profile. The pricing page lists it as an add-on sold separately.",
+   "date_published": "2026-10-29T00:00:00Z"
+  },
+  {
+   "id": "reversinglabs-evt-2026-10-catalog",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#reversinglabs-evt-2026-10-catalog",
+   "title": "launch: ReversingLabs launches Spectra Assure Catalog for approved software downloads",
+   "content_text": "ReversingLabs announced on 2026-10-28 Spectra Assure Catalog, which publishes for internal download only software packages that pass the customer's policy after binary analysis. The vendor says it is available to existing Spectra Assure customers and switched on by default.",
+   "date_published": "2026-10-28T00:00:00Z"
+  },
+  {
+   "id": "veeam-evt-2026-10-vbr-13-1-2-vulnerabilities",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#veeam-evt-2026-10-vbr-13-1-2-vulnerabilities",
+   "title": "vulnerability disclosure: Veeam discloses a critical authorisation bypass fixed in Backup & Replication 13.1.2",
+   "content_text": "Disclosed by Veeam on 2026-10-27 in knowledge base article KB4948: CVE-2026-108142, rated critical (CVSS v4.0 9.1), allowed an unauthenticated attacker to bypass authorisation on the CDP Coordinator Service in version 13.0 and 13.1 builds; two medium-severity path traversal flaws were fixed in the same builds, 13.1.2 and 13.0.3. Veeam said the flaws were reported through its HackerOne programme; version 12 is not affected. None appears in the CISA Known Exploited Vulnerabilities catalogue version read on 2026-11-23.",
+   "date_published": "2026-10-27T00:00:00Z"
+  },
+  {
+   "id": "aikido-security-evt-2026-10-fedramp",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#aikido-security-evt-2026-10-fedramp",
+   "title": "certification: Aikido says its government edition is FedRAMP Moderate authorised through Knox Systems",
+   "content_text": "Aikido's changelog of 2026-10-22 announced FedRAMP Moderate status. Its FedRAMP page says the separate Aikido for Government edition has been authorised since October 2026 inside Knox Systems' FedRAMP boundary on AWS GovCloud. The FedRAMP Marketplace data file read on 2026-11-23 lists Knox Systems as FedRAMP Authorized at Moderate and does not name Aikido.",
+   "date_published": "2026-10-22T00:00:00Z"
+  },
+  {
+   "id": "bolster-ai-evt-2026-10-threat-graph-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#bolster-ai-evt-2026-10-threat-graph-launch",
+   "title": "launch: Bolster AI introduces Threat Graph for linking related findings into campaigns",
+   "content_text": "In a blog post dated 20 October 2026, Bolster AI introduced Threat Graph, a view inside Signals that connects related URLs, domains, hosting providers, phone numbers, emails and social accounts so a campaign can be investigated together. A knowledge-base article updated the same day documents it.",
+   "date_published": "2026-10-20T00:00:00Z"
+  },
+  {
+   "id": "transmit-security-evt-2026-10-agentic-trust",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#transmit-security-evt-2026-10-agentic-trust",
+   "title": "launch: Transmit Security unveils Agentic Trust for detecting and governing AI agents",
+   "content_text": "Alongside its change of chief executive, the vendor announced Agentic Trust for financial institutions and merchants: detection of AI-agent traffic in online channels, classification of the agent and its intent, and controls to allow, limit, hold for customer approval or stop an agent's actions. The release gives no general-availability date or price.",
+   "date_published": "2026-10-19T00:00:00Z"
+  },
+  {
+   "id": "transmit-security-evt-2026-10-ceo-matt-thompson",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#transmit-security-evt-2026-10-ceo-matt-thompson",
+   "title": "leadership change: Transmit Security names Matt Thompson chief executive; co-founder Mickey Boodaei becomes chairman",
+   "content_text": "Transmit Security named Matt Thompson, previously president and chief commercial officer of Socure, as chief executive. BankInfoSecurity and CTech reported that co-founder Mickey Boodaei, chief executive since the company's founding in 2014, becomes chairman and stays involved in product strategy.",
+   "date_published": "2026-10-19T00:00:00Z"
+  },
+  {
+   "id": "memcyco-evt-2026-10-ibi-group-partnership",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#memcyco-evt-2026-10-ibi-group-partnership",
+   "title": "partnership: Memcyco appoints IBI Group as reseller in India",
+   "content_text": "Memcyco and Mumbai-based security firm IBI Group announced a partnership under which IBI Group will resell and co-market Memcyco's services in India, starting with banking and financial services, fintech, e-commerce and critical infrastructure.",
+   "date_published": "2026-10-15T00:00:00Z"
+  },
+  {
+   "id": "absolute-security-evt-2026-10-firmguard-acquisition",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#absolute-security-evt-2026-10-firmguard-acquisition",
+   "title": "acquisition: Absolute Security acquires FirmGuard from Phoenix Technologies",
+   "content_text": "Absolute Security announced the acquisition of FirmGuard, a firmware security and management service for UEFI BIOS, from Phoenix Technologies for an undisclosed price, to add firmware integrity checking, posture management and patching to its platform.",
+   "date_published": "2026-10-09T00:00:00Z"
+  },
+  {
+   "id": "censys-evt-2026-10-cfo-appointed",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#censys-evt-2026-10-cfo-appointed",
+   "title": "leadership change: Censys appoints Jeff Hackett as chief financial officer",
+   "content_text": "Censys's newsroom lists a release dated 6 October 2026 announcing Jeff Hackett as chief financial officer; he appears in that role on the leadership page.",
+   "date_published": "2026-10-06T00:00:00Z"
+  },
+  {
+   "id": "synack-evt-2026-10-netspi-merger-completed",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#synack-evt-2026-10-netspi-merger-completed",
+   "title": "merger: NetSPI and Synack complete their merger",
+   "content_text": "Synack states that the merger with NetSPI was completed on 2026-10-05; NetSPI's page says it closed in October 2026 after regulatory approvals. Both say each company continues to deliver its own platform, services and agreements for now, that no combined product or contract exists yet, and that Synack's FedRAMP Moderate authorisation is unchanged and does not extend to NetSPI products.",
+   "date_published": "2026-10-05T00:00:00Z"
+  },
+  {
+   "id": "pki-solutions-evt-2026-10-q3-release-intune-ejbca",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#pki-solutions-evt-2026-10-q3-release-intune-ejbca",
+   "title": "launch: PKI Spotlight adds Intune Cloud PKI visibility and wider EJBCA monitoring",
+   "content_text": "The third-quarter 2026 release added visibility of Microsoft Cloud PKI certificate authorities connected through Intune, extended EJBCA data into certificates, revocation lists, topology and best-practice alerts, introduced common connection and service status views, and added a cryptography governance area to the built-in maturity self-assessment.",
+   "date_published": "2026-10-01T00:00:00Z"
+  },
+  {
+   "id": "reversinglabs-evt-2026-10-spectra-resolve",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#reversinglabs-evt-2026-10-spectra-resolve",
+   "title": "launch: First release of Spectra Resolve, an AI-assisted dependency remediation tool",
+   "content_text": "The Spectra Assure documentation changelog records the first release of Spectra Resolve on 2026-10-01. The documentation describes it as a desktop application in which an AI coding agent checks whether flagged dependencies are reachable and proposes an upgrade, a code fix or a risk acceptance for a person to approve.",
+   "date_published": "2026-10-01T00:00:00Z"
+  },
+  {
+   "id": "memcyco-evt-2026-09-posa-v1-11",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#memcyco-evt-2026-09-posa-v1-11",
+   "title": "launch: Memcyco releases PoSA v1.11 with Attack Overview and a Risk API",
+   "content_text": "Memcyco released version 1.11 of PoSA, adding earlier identification of attacker devices, an Attack Overview that links events affecting the same user, and a Risk API that returns user and device risk scores with their underlying signals before access is granted. SecurityBrief reported the release on 13 October 2026.",
+   "date_published": "2026-09-30T00:00:00Z"
+  },
+  {
+   "id": "acalvio-evt-2026-09-shadowplex-ai-agent",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#acalvio-evt-2026-09-shadowplex-ai-agent",
+   "title": "launch: Acalvio launches ShadowPlex AI Agent in the Gemini Enterprise agent marketplace",
+   "content_text": "Acalvio announced on 29 September 2026 an AI agent, listed in the Gemini Enterprise agent marketplace and working with Google Cloud Gemini Enterprise, that turns a security objective written in plain language into a deception playbook for deployment through the ShadowPlex platform.",
+   "date_published": "2026-09-29T00:00:00Z"
+  },
+  {
+   "id": "cribl-evt-2026-09-cribl-detect-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cribl-evt-2026-09-cribl-detect-launch",
+   "title": "launch: Cribl launches Cribl Detect, a SIEM that includes detection posture management",
+   "content_text": "Cribl announced Cribl Detect on 29 September 2026 and said it was available to Cribl.Cloud customers. The release lists detection posture management, which maps existing detections to MITRE ATT&CK and shows coverage gaps, broken or noisy rules and missing telemetry, alongside in-stream detections, federated investigation and AI-assisted triage. TechTarget reported that the product combines technology from the CardinalOps and Radiant Security deals and is not yet supported on premises or in self-managed environments. Cribl's documentation labels every Cribl Detect page as Preview and says the feature is not recommended for production environments.",
+   "date_published": "2026-09-29T00:00:00Z"
+  },
+  {
+   "id": "doppel-evt-2026-09-mufg-investment",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#doppel-evt-2026-09-mufg-investment",
+   "title": "funding: MUFG Innovation Partners invests in Doppel",
+   "content_text": "Doppel announced on 24 September 2026 that MUFG Innovation Partners, the corporate venture arm of Mitsubishi UFJ Financial Group, had become a strategic investor. The investor's own notice, dated 25 September 2026, says the investment was made through its No. 3 investment partnership. Neither gave an amount.",
+   "date_published": "2026-09-24T00:00:00Z"
+  },
+  {
+   "id": "fable-security-evt-2026-09-briefing-agent",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fable-security-evt-2026-09-briefing-agent",
+   "title": "launch: Fable Security launches Briefing Agent to turn threat reports and policies into employee briefings",
+   "content_text": "Enterprise Security Tech reported on 17 September 2026 that Fable Security had launched Briefing Agent, an AI tool that drafts targeted security briefings from emerging threats and company policies. An administrator must approve the script, audience and delivery channel before a briefing is sent, and the tool keeps source material, prompts and revision history. It was made available to existing customers within their subscriptions.",
+   "date_published": "2026-09-17T00:00:00Z"
+  },
+  {
+   "id": "pki-solutions-evt-2026-09-unsung-uk-partnership",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#pki-solutions-evt-2026-09-unsung-uk-partnership",
+   "title": "partnership: PKI Solutions appoints Unsung as UK reseller and services partner",
+   "content_text": "PKI Solutions announced that Unsung, a UK consultancy specialising in PKI, will resell PKI Spotlight in the UK and provide deployment, integration, remediation and operations services.",
+   "date_published": "2026-09-15T00:00:00Z"
+  },
+  {
+   "id": "concentric-ai-evt-2026-09-cro-appointment",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#concentric-ai-evt-2026-09-cro-appointment",
+   "title": "leadership change: Concentric AI appoints a chief revenue officer",
+   "content_text": "Concentric AI announced the appointment of Gary Olson as chief revenue officer and Will Saso as vice-president of sales for the Americas.",
+   "date_published": "2026-09-09T00:00:00Z"
+  },
+  {
+   "id": "regscale-evt-2026-09-cmmc-level-2",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#regscale-evt-2026-09-cmmc-level-2",
+   "title": "certification: RegScale announces CMMC Level 2 certification",
+   "content_text": "RegScale's newsroom carries a release, published on a wire service on 2 September 2026, announcing that the company achieved CMMC Level 2 certification. Its Security & Trust page says the certification was achieved in August 2026 with all 110 NIST SP 800-171 requirements met and that the assessor was A-LIGN. The date recorded is the date of the release.",
+   "date_published": "2026-09-02T00:00:00Z"
+  },
+  {
+   "id": "synack-evt-2026-09-netspi-merger-announced",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#synack-evt-2026-09-netspi-merger-announced",
+   "title": "merger: NetSPI and Synack announce an agreement to merge",
+   "content_text": "NetSPI and Synack announced a definitive agreement to merge, stating combined revenue of more than US$200M. BankInfoSecurity reported on 2026-09-03 that the combined firm would be led by NetSPI and majority owned by KKR, NetSPI's majority owner since 2022, with about 800 staff. IT Brief reported an expected close in October. Deal terms were not published.",
+   "date_published": "2026-09-02T00:00:00Z"
+  },
+  {
+   "id": "aikido-security-evt-2026-08-iso-42001",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#aikido-security-evt-2026-08-iso-42001",
+   "title": "certification: Aikido announces ISO/IEC 42001 certification for its AI features",
+   "content_text": "Aikido said on 2026-08-26 that it had been certified to ISO/IEC 42001:2023, with a scope covering the AI-enabled features of its platform, including AutoFix, AutoTriage, AI pentesting and code review. The post does not name the certification body or the certificate date; the event is dated to the announcement.",
+   "date_published": "2026-08-26T00:00:00Z"
+  },
+  {
+   "id": "rubrik-evt-2026-08-director-appointed",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#rubrik-evt-2026-08-director-appointed",
+   "title": "leadership change: Rubrik appoints Rakefet Russak-Aminoach to its board",
+   "content_text": "Rubrik's Form 8-K states that, effective 26 August 2026, the board increased from eight to nine directors and appointed Rakefet Russak-Aminoach as a Class I director with a term expiring at the 2028 annual meeting.",
+   "date_published": "2026-08-26T00:00:00Z"
+  },
+  {
+   "id": "extrahop-evt-2026-08-400gbps-sensor",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#extrahop-evt-2026-08-400gbps-sensor",
+   "title": "launch: ExtraHop announces a 400 Gbps sensor for RevealX",
+   "content_text": "On 25 August 2026 ExtraHop announced a sensor for RevealX that it says analyses data-centre traffic at 400 Gbps at line rate, with general availability expected in the fourth quarter of 2026. The throughput figure is the company's own; no independent measurement was found.",
+   "date_published": "2026-08-25T00:00:00Z"
+  },
+  {
+   "id": "netcraft-evt-2026-08-darren-lee-board",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#netcraft-evt-2026-08-darren-lee-board",
+   "title": "leadership change: Netcraft appoints Darren Lee to its board",
+   "content_text": "On 25 August 2026 Netcraft announced that Darren Lee, formerly a senior executive at Proofpoint, had joined its board. Companies House records his appointment as a director of NC Topco Limited on 12 August 2026.",
+   "date_published": "2026-08-25T00:00:00Z"
+  },
+  {
+   "id": "tanium-evt-2026-08-ceo-change",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#tanium-evt-2026-08-ceo-change",
+   "title": "leadership change: Co-founder Orion Hindawi returns as Tanium chief executive",
+   "content_text": "Tanium announced that co-founder Orion Hindawi, chief executive from 2016 to 2023, returned to the role with immediate effect, replacing Dan Streetman, who had been appointed in February 2023 and left the board. Co-founder David Hindawi returned as chairman.",
+   "date_published": "2026-08-20T00:00:00Z"
+  },
+  {
+   "id": "cribl-evt-2026-08-radiant-security-assets",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cribl-evt-2026-08-radiant-security-assets",
+   "title": "acquisition: Cribl buys Radiant Security's AI security-operations technology assets",
+   "content_text": "Cribl announced on 19 August 2026 that it had bought technology assets, including intellectual property for automated alert triage and investigation, from Radiant Security. It described this as its second security technology acquisition of the year after CardinalOps. Terms were not disclosed. The release describes a purchase of assets, not of the company.",
+   "date_published": "2026-08-19T00:00:00Z"
+  },
+  {
+   "id": "fastly-evt-2026-08-credit-facility-increase",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fastly-evt-2026-08-credit-facility-increase",
+   "title": "funding: Fastly increases its revolving credit facility from US$60 million to US$100 million",
+   "content_text": "Fastly reported in a Form 8-K that on 17 August 2026 it amended its credit agreement with Silicon Valley Bank, a division of First-Citizens Bank, raising the senior secured revolving facility from US$60 million to US$100 million, extending its scheduled maturity to 17 August 2029 subject to conditions tied to the 2028 convertible notes, and lowering the interest margin by 0.25%. The quarterly report for September 2026 says nothing was drawn on the facility.",
+   "date_published": "2026-08-17T00:00:00Z"
+  },
+  {
+   "id": "absolute-security-evt-2026-08-secure-access-14-57-advisory",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#absolute-security-evt-2026-08-secure-access-14-57-advisory",
+   "title": "vulnerability disclosure: Absolute publishes fixes in Secure Access 14.57",
+   "content_text": "Absolute disclosed in its vulnerability archive on 2026-08-12 that Secure Access 14.57 fixed flaws that could allow denial of service by an attacker who controlled an authentication session or sat between client and server. The entry read lists no CVE identifiers and does not state that the flaws were exploited.",
+   "date_published": "2026-08-12T00:00:00Z"
+  },
+  {
+   "id": "fastly-evt-2026-08-securities-class-action-ruling",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#fastly-evt-2026-08-securities-class-action-ruling",
+   "title": "litigation: Court lets part of the securities class action against Fastly proceed",
+   "content_text": "Reported by Fastly in its Form 10-Q filed on 4 November 2026: a putative securities class action filed on 24 May 2024 in the US District Court for the Northern District of California (case 4:24-cv-03170) names the company and certain officers, alleges violations of sections 10(b) and 20(a) of the Exchange Act on behalf of purchasers of Fastly securities between 15 November 2023 and 7 August 2024, and seeks unspecified damages. On 10 August 2026 the court granted in part and denied in part the defendants' motion to dismiss the second amended complaint, and the defendants filed an answer on 27 October 2026. The filing says six related stockholder derivative complaints have been filed and are stayed or subject to negotiated stays. No outcome has been decided.",
+   "date_published": "2026-08-10T00:00:00Z"
+  },
+  {
+   "id": "infoblox-evt-2026-08-kentik-acquisition",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#infoblox-evt-2026-08-kentik-acquisition",
+   "title": "acquisition: Infoblox completes acquisition of network observability company Kentik",
+   "content_text": "Network World reported on 8 July 2026 that Infoblox had agreed to acquire Kentik, a network observability company, on undisclosed terms. Infoblox's release of 6 August 2026 says the acquisition has completed and that Kentik's capabilities will be integrated into its platform over time.",
+   "date_published": "2026-08-06T00:00:00Z"
+  },
+  {
+   "id": "tidal-cyber-evt-2026-07-mcp-server",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#tidal-cyber-evt-2026-07-mcp-server",
+   "title": "launch: Tidal Cyber adds a Model Context Protocol server for use with AI assistants",
+   "content_text": "In a release dated 31 July 2026 and published on 3 August 2026, Tidal Cyber announced a Model Context Protocol server that lets approved AI assistants query the platform's threat profiles, coverage maps and recommendations in natural language, with authenticated, tenant-scoped access. It cites ChatGPT, Claude and Microsoft Copilot as examples of such assistants and says the capability is included in the platform.",
+   "date_published": "2026-07-31T00:00:00Z"
+  },
+  {
+   "id": "acalvio-evt-2026-07-deception-guardrails",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#acalvio-evt-2026-07-deception-guardrails",
+   "title": "launch: Acalvio launches Deception Guardrails for AI agents",
+   "content_text": "Acalvio announced Deception Guardrails on 30 July 2026, a capability of the ShadowPlex platform that places decoys and tripwires in AI agent workflows and around AI infrastructure to detect agents that have been hijacked or are misbehaving. The company describes it as patent pending. SecurityBrief UK reported the launch the next day.",
+   "date_published": "2026-07-30T00:00:00Z"
+  },
+  {
+   "id": "doppel-evt-2026-07-email-security-ga",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#doppel-evt-2026-07-email-security-ga",
+   "title": "launch: Doppel Email Security becomes generally available",
+   "content_text": "Doppel announced general availability of Email Security on 30 July 2026, in the Americas and Asia-Pacific regions, together with an AI managed service for its human risk management product. SecurityBrief UK reported the launch on 31 July 2026.",
+   "date_published": "2026-07-30T00:00:00Z"
+  },
+  {
+   "id": "veeam-evt-2026-07-vdp-v13-1",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#veeam-evt-2026-07-vdp-v13-1",
+   "title": "launch: Veeam Data Platform v13.1 becomes generally available",
+   "content_text": "Veeam announced general availability of version 13.1, adding support for six more hypervisors, malware scanning of file shares, expanded threat detection for Azure, automated Active Directory forest recovery, and post-quantum and hybrid FIPS cryptography options. The release notes give 29 July 2026 as the download date.",
+   "date_published": "2026-07-29T00:00:00Z"
+  },
+  {
+   "id": "anvilogic-evt-2026-07-blueprints-general-availability",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#anvilogic-evt-2026-07-blueprints-general-availability",
+   "title": "launch: Anvilogic makes Blueprints generally available and adds search over cloud storage",
+   "content_text": "Anvilogic announced general availability of Blueprints, with scheduling, customer-configured connectors, sharing across teams and daily AI budget controls, and a new federated search that reaches data left in Amazon S3, Azure Blob Storage and Google Cloud Storage without moving it.",
+   "date_published": "2026-07-28T00:00:00Z"
+  },
+  {
+   "id": "infoblox-evt-2026-07-easm-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#infoblox-evt-2026-07-easm-launch",
+   "title": "launch: Infoblox adds external attack surface management and supplier monitoring to Exposure Management",
+   "content_text": "In a release dated 28 July 2026 Infoblox announced External Attack Surface Management and Supply Chain Intelligence as additions to Infoblox Exposure Management alongside Digital Risk Protection Services. The release mentions an early access programme and gives no general availability date.",
+   "date_published": "2026-07-28T00:00:00Z"
+  },
+  {
+   "id": "intel-471-evt-2026-07-agent471-mcp471",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#intel-471-evt-2026-07-agent471-mcp471",
+   "title": "launch: Intel 471 adds an AI agent and an MCP connector to Verity471",
+   "content_text": "Intel 471 announced Agent471, an AI agent inside Verity471 that answers questions across a customer's subscribed intelligence with citations, and MCP471, a Model Context Protocol connector that brings the intelligence into AI tools the customer already runs. Help Net Security reported the announcement the same day.",
+   "date_published": "2026-07-28T00:00:00Z"
+  },
+  {
+   "id": "zerofox-evt-2026-07-hntr-platform-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#zerofox-evt-2026-07-hntr-platform-launch",
+   "title": "launch: ZeroFox launches the HNTR platform and HNTR Executive Protection",
+   "content_text": "ZeroFox announced on 28 July 2026 the general availability of HNTR, which it described as a new AI-first platform bringing its digital risk protection and threat intelligence together, and of HNTR Executive Protection as the first application on it. SiliconANGLE reported the launch the same day. The vendor's site now presents its solutions under the HNTR platform name.",
+   "date_published": "2026-07-28T00:00:00Z"
+  },
+  {
+   "id": "onespan-evt-2026-07-digipassone-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#onespan-evt-2026-07-digipassone-launch",
+   "title": "launch: OneSpan introduces the DigipassONE authentication platform",
+   "content_text": "OneSpan announced DigipassONE, a platform bringing together authentication, transaction signing, digital credentials, analytics and in-app protection, with DigipassONE Authenticate as the authentication module. The documentation states the platform software was formerly known as Digipass S3. In October 2026 OneSpan previewed a free passkey trial of DigipassONE Authenticate.",
+   "date_published": "2026-07-22T00:00:00Z"
+  },
+  {
+   "id": "bolster-ai-evt-2026-07-fraudulent-ads-launch",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#bolster-ai-evt-2026-07-fraudulent-ads-launch",
+   "title": "launch: Bolster AI adds fraudulent advert monitoring and takedowns to its platform",
+   "content_text": "In a release dated 21 July 2026, Bolster AI announced detection of paid search and social adverts that impersonate a customer's brand, with takedown requests and monitoring for reappearance. The release said it was available at once as part of the platform; a knowledge-base article describes how the findings appear in the Web and Social Media modules.",
+   "date_published": "2026-07-21T00:00:00Z"
+  },
+  {
+   "id": "black-kite-evt-2026-07-govramp-ready",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#black-kite-evt-2026-07-govramp-ready",
+   "title": "certification: Black Kite announces GovRAMP status for its third-party risk intelligence product",
+   "content_text": "Black Kite announced a GovRAMP status for its Third-Party Cyber Risk Intelligence product. The release's title says Ready while its body says Authorization; the GovRAMP participants list read on 2026-11-22 shows the product as Ready at Moderate.",
+   "date_published": "2026-07-15T00:00:00Z"
+  },
+  {
+   "id": "cribl-evt-2026-07-cardinalops-acquisition",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#cribl-evt-2026-07-cardinalops-acquisition",
+   "title": "acquisition: Cribl announces the acquisition of detection-coverage firm CardinalOps",
+   "content_text": "Cribl announced on 14 July 2026 that it was acquiring CardinalOps, a company founded in 2020 whose platform measured an organisation's detection coverage against adversary behaviour and found and repaired broken or noisy detection rules in other vendors' SIEM and EDR tools. Terms were not disclosed. BankInfoSecurity reported that CardinalOps had 35 staff and had raised US$24 million; TechTarget reported Cribl's chief executive saying about 20 security engineers and the intellectual property would move to Cribl. Cribl said it would open a Tel Aviv office for the team. No separate statement that the transaction had closed was found; a Cribl release of 19 August 2026 refers to it as an acquisition made in July, and when checked for this record cardinalops.com redirected permanently to cribl.io. The technology was then built into Cribl Detect.",
+   "date_published": "2026-07-14T00:00:00Z"
+  },
+  {
+   "id": "tidal-cyber-evt-2026-07-asset-vulnerability-prioritisation",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#tidal-cyber-evt-2026-07-asset-vulnerability-prioritisation",
+   "title": "launch: Tidal Cyber announces threat-led asset visibility and vulnerability prioritisation",
+   "content_text": "Tidal Cyber announced on 13 July 2026 two additions to its platform: a view of which assets matter to adversary procedures and where defences have blind spots, and ranking of vulnerabilities by their link to adversary procedures. The release did not say whether the platform discovers assets or scans for vulnerabilities itself or takes that data from other tools, and it gave no availability, edition or customer details.",
+   "date_published": "2026-07-13T00:00:00Z"
+  },
+  {
+   "id": "aikido-security-evt-2026-06-root",
+   "url": "https://emergingtechrisk.com/Frontier-Ratings/changes?period=all#aikido-security-evt-2026-06-root",
+   "title": "acquisition: Aikido acquires Root, which patches open-source vulnerabilities in place",
+   "content_text": "Aikido announced on 2026-06-30 that it had acquired Root (Root.io Inc., founded in 2020 as Slim.AI), whose AI agents build patches for open-source vulnerabilities at the versions customers already run. The capability is offered as Aikido Libraries and Aikido Images. Terms were not disclosed.",
+   "date_published": "2026-06-30T00:00:00Z"
+  },
+  {
    "id": "version-2026-11-22",
    "url": "https://emergingtechrisk.com/Frontier-Ratings/changes#v-2026-11-22",
    "title": "Dataset version 2026-11-22",

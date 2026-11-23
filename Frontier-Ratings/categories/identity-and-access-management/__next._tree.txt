@@ -1,8 +1,8 @@
-:HL["/Frontier-Ratings/_next/static/chunks/41kqpsahxdaxd.css","style"]
+:HL["/Frontier-Ratings/_next/static/chunks/2_9yvxuanno9s.css","style"]
 :HL["/Frontier-Ratings/_next/static/media/07c7676b89ed2778-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Frontier-Ratings/_next/static/media/237858b39a32779d-s.p.2cyn07wtgehh0.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Frontier-Ratings/_next/static/media/53897e768d329f66-s.p.3t6q91iet4nsy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"id","t":"d","k":"identity-and-access-management","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"categories","h":131168,"c":"$Q2"}]]
-0:{"b":"Wjr1Cr44cYsWwJu6jXP5V","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"ZQCLz77icoc5wyVt_4zoi","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
